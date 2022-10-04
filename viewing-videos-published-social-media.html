@@ -1,67 +1,50 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    {% if site.product_short == "Video Cloud" %}
-    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5018179071001">&nbsp;</div>
-    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
-      {% endif %}
-    <p>When you open Brightcove Social, or click <strong>Published</strong> in the left navigation, a list of videos published using Brightcove Social will appear.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16343-publish-streams.png" /></figure>
-    <p>Note that if Auto Sync is being used and the sync rules are configured to update video metadata on the social platform, multiple entries for the same video may appear in the list. For example, an entry will appear when the video is first synced and then additional entries will appear if the video metadata is updated and synced to a social platform.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="view">Viewing the publishing status</h2>
-    <p>The body of the page will list all videos that have been published to a social media destination. For each video, the following will be displayed:</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section"> {% if site.product_short == Video Cloud-fr/ %}
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5018179071001">&nbsp;</div> <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> {% endif %}
+    <p>Lorsque vous ouvrez Brightcove Social, ou que vous cliquez sur<strong> Publié</strong> dans le menu de navigation de gauche, une liste des vidéos publiées à l'aide de Brightcove Social s'affiche.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16343-publish-streams.png" /></figure>
+    <p>Notez que si la synchronisation automatique est utilisée et que les règles de synchronisation sont configurées pour mettre à jour les métadonnées vidéo sur la plateforme sociale, plusieurs entrées pour la même vidéo peuvent apparaître dans la liste. Par exemple, une entrée apparaît lorsque la vidéo est synchronisée pour la première fois, puis des entrées supplémentaires apparaissent si les métadonnées de la vidéo sont mises à jour et synchronisées avec une plateforme sociale.</p>  </section><section class="bcls-section">
+    <h2 id="view">Affichage de l'état de publication</h2>
+    <p>Le corps de la page répertorie toutes les vidéos qui ont été publiées sur un réseau social. Pour chaque vidéo, les informations suivantes seront affichées:</p>
     <ul>
-      <li>Status</li>
-      <li>Time of the event</li>
-      <li>Video thumbnail</li>
-      <li>Video name and short description</li>
-      <li>Link to social media account and site where the video was published</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="filter">Filtering the published list</h2>
-    <p>The top of the page provides the option of filtering the list based upon publishing status or destination. The following publishing statuses are available:</p>
+      <li>Statut</li>
+      <li>Heure de l'événement</li>
+      <li>Miniature de la vidéo</li>
+      <li>Nom de la vidéo et brève description</li>
+      <li>Lien vers le compte de réseau social et le site où la vidéo a été publiée</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="filter">Filtrage de la liste publiée</h2>
+    <p>Le haut de la page permet de filtrer la liste en fonction de l'état de publication ou de la destination. Les statuts de publication suivants sont disponibles:</p>
     <ul>
-      <li><strong>All Status Types</strong> - Displays all status types</li>
-      <li><strong>Deleted</strong> - Displays videos that have been published and deleted from a social platform</li>
-      <li><strong>Error</strong> - Displays posts that resulted in an error</li>
-      <li><strong>Hidden</strong> - Displays posts where the video is private, unlisted or expired on social media</li>
-      <li><strong>Processing</strong> - Displays videos that are in the process of being posted to a social platform</li>
-      <li><strong>Published</strong> - Displays videos that were successfully posted to a social platform</li>
-      <li><strong>Scheduled</strong> - Displays videos that are scheduled to be posted to a social platform</li>
-      <li><strong>Synced</strong> - Displays videos that were synced with Auto Sync</li>
-      <li><strong>Abandoned</strong> - Displays videos that were Auto Synced out to a social platform and then either:
+      <li><strong>Tous les types d'état</strong>: affiche tous les types d'état</li>
+      <li><strong>Supprimé</strong>: affiche les vidéos qui ont été publiées et supprimées d'une plateforme sociale</li>
+      <li><strong>Erreur</strong> - Affiche les publications qui ont entraîné une erreur</li>
+      <li><strong>Masqué</strong> - Affiche les publications dont la vidéo est privée, non répertoriée ou a expiré sur les réseaux sociaux</li>
+      <li><strong>Processing</strong> - Affiche les vidéos en cours de publication sur une plateforme sociale</li>
+      <li><strong>Publié</strong>: affiche les vidéos qui ont été publiées avec succès sur une plateforme sociale</li>
+      <li><strong></strong>Programmé: affiche les vidéos dont la publication est programmée sur une plateforme sociale</li>
+      <li><strong>Synced</strong> - Affiche les vidéos synchronisées avec Auto Sync</li>
+      <li><strong>Abandoned</strong> - Affiche les vidéos qui ont été synchronisées automatiquement sur une plateforme sociale, puis soit:
         <ul>
-          <li>Deleted from {{ site.product_short }} with the video being left on the social platform due to Auto Sync being configured to take no actions when a video is deleted</li>
-          <li>Untagged so that it doesn’t match the autosync any more but is left on the social platform due to Auto Sync being configured to take no actions when video metadata changes</li>
+          <li>Supprimé de {{site.product_short}} avec la vidéo laissée sur la plateforme sociale en raison de la configuration de la synchronisation automatique pour ne prendre aucune mesure lorsqu'une vidéo est supprimée</li>
+          <li>Non balisé afin qu'il ne corresponde plus à la synchronisation automatique, mais qu'il soit laissé sur la plateforme sociale en raison de la configuration de la synchronisation automatique pour ne prendre aucune action lorsque les métadonnées de la vidéo changent™</li>
         </ul>
       </li>
-    </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16343-filter-streams.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="search">Searching for videos</h2>
-    <p>The Search field can be used to search the videos in your account. When searching, the following fields are searched:</p>
+    </ul>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16343-filter-streams.png" /></figure></section><section class="bcls-section">
+    <h2 id="search">Recherche de vidéos</h2>
+    <p>Le champ de recherche peut être utilisé pour rechercher les vidéos de votre compte. Lors de la recherche, les champs suivants sont recherchés:</p>
     <ul>
-      <li>Video ID</li>
-      <li>Name</li>
-      <li>Short description</li>
-      <li>Long description</li>
-      <li>Tags</li>
-      <li>Reference ID</li>
-      <li>Custom fields</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="errors">Common publishing errors</h2>
-    <p>Below is a list of common publishing errors that may be encountered.</p>
+      <li>ID de la vidéo</li>
+      <li>Nom</li>
+      <li>Brève description</li>
+      <li>Description longue</li>
+      <li>Balises</li>
+      <li>ID de référence</li>
+      <li>Champs personnalisés</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="errors">Erreurs de publication courantes</h2>
+    <p>Vous trouverez ci-dessous une liste des erreurs de publication les plus courantes qui peuvent être rencontrées.</p>
     <ol class="bcls-tasklist-restart">
-      <li>YouTube - <strong>Upload rejection: Video was a duplicate</strong>. YouTube doesn't allow the same video (as determined by comparing digital fingerprints of the uploaded video binary, not by {{ site.product_short }} video ID) to be uploaded to a channel more than once, and fails attempts after the first with this error.</li>
-      <li><strong>NO_RENDITION_FOR_SOCIAL_PLATFORM_ERROR</strong>. The Social module couldn't find a {{ site.product_short }} video rendition that meets the platform's video requirements. The most common cause of these by far is publishers with Twitter auto syncs tagging videos that are greater than 140 seconds (Twitter's maximum allowed duration).</li>
-      <li>YouTube - <strong>The request metadata specifies an invalid or empty video title (as part of a longer error message)</strong>. YouTube has a maximum title length of 100 characters, so when using auto sync, if the {{ site.product_short }} video metadata that gets mapped to the YouTube title is too long, this error will result.</li>
-    </ol>
-  </section>
-</article>
+      <li>YouTube - Refus de<strong> chargement: La vidéo était un double</strong>. YouTube n'autorise pas le téléchargement de la même vidéo (déterminée en comparant les empreintes numériques du binaire de la vidéo mise en ligne, et non en fonction de l'identifiant de la vidéo {{site.product_short}}) sur une chaîne plus d'une fois, et échoue les tentatives après la première avec cette erreur.</li>
+      <li><strong>NO_RENDITION_FOR_SOCIAL_PLATFORM_ERROR</strong>. Le module Social n'a pas trouvé de rendu vidéo {{site.product_short}} répondant aux exigences vidéo de la plateforme. La cause la plus courante de ces problèmes est de loin les éditeurs qui synchronisent automatiquement Twitter qui marquent les vidéos de plus de 140 secondes (durée maximale autorisée par Twitter).</li>
+      <li>YouTube -<strong> Les métadonnées de la demande spécifient un titre vidéo non valide ou vide (dans le cadre d'un message d'erreur plus long)</strong>. YouTube a une longueur de titre maximale de 100 caractères. Par conséquent, lors de l'utilisation de la synchronisation automatique, si les métadonnées de la vidéo {{site.product_short}} associées au titre YouTube sont trop longues, cette erreur se produit.</li>
+    </ol>   </section></article>

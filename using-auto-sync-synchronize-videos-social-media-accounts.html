@@ -1,187 +1,155 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ nonprescription }}</summary>
-  <section class="bcls-section"> {% if site.product_short == "Video Cloud" %}
-    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5194128705001">&nbsp;</div>
-    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> 
-    {% endif %}
-    <p>Brightcove Social provides an Auto Sync feature which can be used to automatically synchronize videos to social media channels based upon the tags that are associated with a video.</p>
-    <p>Before configuring Auto Sync, you should have some publishing destinations created. For information on creating publishing destinations, see <a href="/social/creating-social-media-publishing-destinations.html">Creating Social Media Publishing Destinations</a>.</p>
-    <p>Note that using Auto Sync and manually publishing videos using the Social module are independent operations. Auto Sync is not aware of which videos have been manually published using the Social module. If a video is tagged in a way that causes Auto Sync to publish it to one of your social destinations, it will do that regardless if that video has previously been manually published using the Social module.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="configure">Configuring Auto Sync</h2>
-    <p>To configure Auto Sync, follow these steps.</p>
+  <h1>{{page.title}}</h1> <summary>{{nonprescription}}</summary> <section class="bcls-section"> {% if site.product_short == Video Cloud-fr/ %}
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5194128705001">&nbsp;</div> <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> {% endif %}
+    <p>Brightcove Social fournit une fonctionnalité de synchronisation automatique qui peut être utilisée pour synchroniser automatiquement les vidéos sur les réseaux sociaux en fonction des balises associées à une vidéo.</p>
+    <p>Avant de configurer la synchronisation automatique, vous devez avoir créé certaines destinations de publication. Pour plus d'informations sur la création de destinations de publication, voir<a href="/social/creating-social-media-publishing-destinations.html"> Création de destinations</a> de publication sur les réseaux sociaux</p>
+    <p>Notez que l'utilisation de la synchronisation automatique et la publication manuelle de vidéos à l'aide du module Social sont des opérations indépendantes. Auto Sync ne sait pas quelles vidéos ont été publiées manuellement à l'aide du module Social. Si une vidéo est balisée de telle sorte qu'Auto Sync la publie sur l'une de vos destinations sociales, elle le fera même si cette vidéo a déjà été publiée manuellement à l'aide du module Social.</p>  </section><section class="bcls-section">
+    <h2 id="configure">Configuration de la synchronisation automatique</h2>
+    <p>Pour configurer la synchronisation automatique, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Auto Sync</strong> in the left navigation. A list of all Auto Sync names that have been created will be displayed.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-autosync-list.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: The thumbnail image will populate once videos have been synced.</aside>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Auto Sync</strong> dans le volet de navigation de gauche. Une liste de tous les noms de synchronisation automatique qui ont été créés s'affiche. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-autosync-list.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: L'image miniature s'affichera une fois les vidéos synchronisées.</aside>
       </li>
-      <li>Click <span class="button-blue">Set up Auto Sync</span>.</li>
-      <li>Enter a <strong>Name</strong> for the sync.</li>
-      <li>Select the videos to distribute.
+      <li>Cliquez sur<span class="button-blue"> Configurer la synchronisation automatique</span>.</li>
+      <li>Entrez un<strong> nom</strong> pour la synchronisation.</li>
+      <li>Sélectionnez les vidéos à distribuer.
         <ul>
-          <li><strong>Videos with all these tags</strong> - Videos with <strong>ALL</strong> of the tags listed should be synced</li>
-          <li><strong>Videos with any of these tags</strong> - Videos with <strong>ANY</strong> of the tags listed should be synced</li>
-          <li><strong>All videos in this account</strong> - All videos in the account should be synced</li>
+          <li><strong>Vidéos avec tous ces tags</strong> - Les vidéos avec<strong> TOUS les</strong> tags listés doivent être synchronisées</li>
+          <li><strong>Vidéos avec l'un de ces tags</strong> - Les vidéos avec<strong> N'IMPORTE</strong> LAQUELLE des balises répertoriées doivent être synchronisées</li>
+          <li><strong>Toutes les vidéos de ce compte</strong>: toutes les vidéos du compte doivent être synchronisées</li>
         </ul>
       </li>
-      <li>Unless <strong>All videos in this account</strong> was selected, enter a comma separated list of tags. After tags have been entered, the number of videos with these tags will be displayed.
-        <aside class="bcls-aside bcls-aside--information">Note: Any existing videos with the specified tags will not be automatically synchronized. Any new videos with these tags will be automatically synchronized. To get your existing videos to synchronize, change the video metadata to trigger an Auto Sync.</aside>
+      <li>À moins que l'option<strong> Toutes les vidéos de ce compte</strong> n'ait été sélectionnée, entrez une liste de balises séparées par des virgules. Une fois les tags saisis, le nombre de vidéos comportant ces tags s'affiche. <aside class="bcls-aside bcls-aside--information">Remarque: Toutes les vidéos existantes portant les balises spécifiées ne seront pas automatiquement synchronisées. Toutes les nouvelles vidéos portant ces balises seront automatiquement synchronisées. Pour synchroniser vos vidéos existantes, modifiez les métadonnées de la vidéo pour déclencher une synchronisation automatique.</aside>
       </li>
-      <li>Select any videos that should be excluded.
+      <li>Sélectionnez les vidéos qui doivent être exclues.
         <ul>
-          <li><strong>Inactive</strong> - Inactive videos will not be synced (default)</li>
-          <li><strong>Schedule restricted</strong> - Scheduled videos will not be synced</li>
-          <li><strong>Geographically restricted</strong> - Videos with gauge-restrictions will not be synced</li>
-        </ul>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-setup.png" /></figure>
+          <li><strong>Inactive</strong> - Les vidéos inactives ne seront pas synchronisées (par défaut)</li>
+          <li><strong>Horaire restreint</strong> - Les vidéos programmées ne seront pas synchronisées</li>
+          <li><strong>Géographiquement restreint</strong> - Les vidéos soumises à des restrictions de jauge ne seront pas synchronisées</li>
+        </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-setup.png" /></figure>
       </li>
-      <li>Click <span class="button-blue">Next</span>.</li>
-      <li>Choose a publishing destination to synchronize the videos to. Click <strong>Manage Destinations</strong> to create new destinations or edit any existing ones. Clicking on a destination will display the destination defaults.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-choose-dest.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: Destination defaults can be changed by editing the destination properties.</aside>
+      <li>Cliquez sur<span class="button-blue"> Suivant</span>.</li>
+      <li>Choisissez une destination de publication pour synchroniser les vidéos. Cliquez sur<strong> Gérer les destinations</strong> pour créer de nouvelles destinations ou modifier celles qui existent déjà. Cliquez sur une destination pour afficher les valeurs par défaut de la destination. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-choose-dest.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: Les valeurs par défaut de destination peuvent être modifiées en modifiant les propriétés de destination.</aside>
       </li>
-      <li>Click <span class="button-blue">Next</span>.</li>
-      <li><a href="#rules">Configure the Auto Sync rules</a>. The options available will change based upon the social platform that was selected.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="rules">Configuring Auto Sync rules</h2>
-    <p>When configuring Auto Sync, rules can be configured to handle what happens to videos on the social media site. This includes what to do when the video is removed from the list (video is deleted from {{ site.product_short }} or the tags change) or how video metadata updates are handled. The rules are based upon the social media platform that was selected:</p>
+      <li>Cliquez sur<span class="button-blue"> Suivant</span>.</li>
+      <li><a href="#rules">Configurez les règles de synchronisation automatique</a>. Les options disponibles changeront en fonction de la plateforme sociale sélectionnée.</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="rules">Configuration des règles de synchronisation automatique</h2>
+    <p>Lors de la configuration de la synchronisation automatique, des règles peuvent être configurées pour gérer ce qu'il advient des vidéos sur le site de réseau social. Cela inclut la marche à suivre lorsque la vidéo est supprimée de la liste (la vidéo est supprimée de {{site.product_short}} ou les balises changent) ou la manière dont les mises à jour des métadonnées de la vidéo sont gérées. Les règles sont basées sur la plateforme de médias sociaux sélectionnée:</p>
     <ul>
       <li><a href="#yt">YouTube</a></li>
       <li><a href="#fb">Facebook</a></li>
       <li><a href="#twitter">Twitter</a></li>
       <li><a href="#linkedin">LinkedIn</a></li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information">Notes:
+    </ul> <aside class="bcls-aside bcls-aside--information">Remarques:
       <ul>
-        <li>Once videos are published to a social platform using Auto Sync, Brightcove Social does not track any actions that happen to that video on the social media side. For example, Brightcove Social is not notified when a video has been deleted from a social platform and the fact that the video has been deleted will not be reflected inside Brightcove Social. This can also happen if a social media platform detects copyrighted content and then removes it. Any subsequent changes to the video on the {{ site.product_short }} side that would cause another sync event to occur will cause sync errors in Brightcove Social. In this case, it's a "retry able error", and the retry will cause the video to be re-uploaded with the changes applied.</li>
-        <li>There are an initial limit of 20 possible auto syncs available. If you need more, please <a href="https://supportportal.brightcove.comlanguage=en_US">contact Brightcove Support</a>.</li>
-      </ul>
-    </aside>
+        <li>Une fois que les vidéos sont publiées sur une plateforme sociale à l'aide de la synchronisation automatique, Brightcove Social ne suit pas les actions qui se produisent sur ces vidéos du côté des réseaux sociaux. Par exemple, Brightcove Social n'est pas averti lorsqu'une vidéo a été supprimée d'une plateforme sociale et le fait que la vidéo ait été supprimée ne sera pas reflété dans Brightcove Social. Cela peut également se produire si une plateforme de médias sociaux détecte du contenu protégé par des droits d'auteur, puis le supprime. Toute modification ultérieure de la vidéo du côté {{site.product_short}} qui provoquerait la survenue d'un autre événement de synchronisation provoquera des erreurs de synchronisation dans Brightcove Social. Dans ce cas, il s'agit d'une erreur de réessayer-fr/, et la nouvelle tentative provoquera le rechargement de la vidéo avec les modifications appliquées.</li>
+        <li>Il y a une limite initiale de 20 synchronisations automatiques possibles. Si vous avez besoin de plus d'informations,<a href="https://supportportal.brightcove.comlanguage=en_US"> contactez le support Brightcove</a>.</li>
+      </ul> </aside>
     <div id="yt" class="BCL-subsection">
-      <h3>Configuring YouTube rules</h3>
-      <p>When using Auto Sync with YouTube:</p>
+      <h3>Configuration des règles YouTube</h3>
+      <p>Lorsque vous utilisez la synchronisation automatique avec YouTube:</p>
       <ul>
-        <li>YouTube has a 100-character limit for titles so the Social module will truncate video titles to 100 characters.</li>
-        <li>If the <strong>Update video metadata on YouTube option</strong> is selected, if the video is upload without captions, and then captions are added, the captions will be passed to YouTube.</li>
-        <li>If the <strong>Update video metadata on YouTube option</strong> is selected, if the video is upload with captions, any changes to the captions info in {{ site.product_short }} will cause the updated captions to be passed to YouTube.</li>
+        <li>YouTube impose une limite de 100 caractères pour les titres, de sorte que le module Social tronquera les titres des vidéos à 100 caractères.</li>
+        <li>Si l'option<strong> Mettre à jour les métadonnées de la vidéo sur YouTube</strong> est sélectionnée, si la vidéo est mise en ligne sans sous-titres, puis si des sous-titres sont ajoutés, les sous-titres seront transmis à YouTube.</li>
+        <li>Si l'option<strong> Mettre à jour les métadonnées de la vidéo sur YouTube</strong> est sélectionnée, si la vidéo est téléchargée avec des sous-titres, toute modification apportée aux informations de sous-titres dans {{site.product_short}} entraînera la transmission des sous-titres mis à jour à YouTube.</li>
       </ul>
       <ol class="bcls-tasklist-restart">
-        <li>Select what happens when a video is untagged or deleted from {{ site.product_short }}:
+        <li>Sélectionnez ce qui se passe lorsqu'une vidéo n'est pas balisée ou supprimée de {{site.product_short}}:
           <ul>
-            <li><strong>Delete distributed video on YouTube</strong> - The video will be removed from YouTube</li>
-            <li><strong>Make distributed video</strong> - Make the YouTube video <strong>Private</strong> or <strong>Unlisted</strong></li>
-            <li><strong>No action</strong> - Nothing happens to the YouTube video</li>
+            <li><strong>Supprimer la vidéo distribuée sur YouTube</strong> - La vidéo sera supprimée de YouTube</li>
+            <li><strong>Rendre la vidéo distribuée</strong> - Rendre la vidéo YouTube<strong> privée</strong> ou<strong> non répertoriée</strong></li>
+            <li><strong>Aucune action</strong> - Rien ne se passe avec la vidéo YouTube</li>
           </ul>
         </li>
-        <li>Select what happens when the video metadata is changed:
+        <li>Sélectionnez ce qui se passe lorsque les métadonnées de la vidéo sont modifiées:
           <ul>
-            <li><strong>Update video metadata on YouTube</strong> - Changes to video metadata on the {{ site.product_short }} side will be synchronized to YouTube</li>
-            <li><strong>No action</strong> - No action is taken
-              <aside class="bcls-aside bcls-aside--information">Note: When the video source file is updated in Studio, the updated video is not synced to YouTube. This is a <a href="https://support.google.com/youtube/answer/55770?hl=en">YouTube limitation</a>.</aside>
+            <li><strong>Mettre à jour les métadonnées de la vidéo sur YouTube</strong> - Les modifications apportées aux métadonnées vidéo du côté {{site.product_short}} seront synchronisées avec YouTube</li>
+            <li><strong>Aucune action</strong> - Aucune mesure n'est prise<aside class="bcls-aside bcls-aside--information"> Remarque: Lorsque le fichier source de la vidéo est mis à jour dans Studio, la vidéo mise à jour n'est pas synchronisée avec YouTube. Il s'agit d'une limitation de<a href="https://support.google.com/youtube/answer/55770?hl=en"> YouTube</a>.</aside>
             </li>
-          </ul>
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-yt-rules.png" /></figure>
+          </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-yt-rules.png" /></figure>
         </li>
-        <li>Click <span class="button-blue">Next</span>.</li>
-        <li>Confirm the Auto Sync settings and then click <span class="button-blue">Finish</span>.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-yt-confirm.png" /></figure>
+        <li>Cliquez sur<span class="button-blue"> Suivant</span>.</li>
+        <li>Confirmez les paramètres de synchronisation automatique, puis cliquez sur<span class="button-blue"> Terminer</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-yt-confirm.png" /></figure>
         </li>
       </ol>
     </div>
     <div id="fb" class="BCL-subsection">
-      <h3>Configuring Facebook rules</h3>
+      <h3>Configuration des règles de Facebook</h3>
       <ol class="bcls-tasklist-restart">
-        <li>Select what happens when a video is untagged or deleted from {{ site.product_short }}:
+        <li>Sélectionnez ce qui se passe lorsqu'une vidéo n'est pas balisée ou supprimée de {{site.product_short}}:
           <ul>
-            <li><strong>Delete distributed video on Facebook</strong> - The video will be deleted from Facebook</li>
-            <li><strong>Expire distributed video on Facebook</strong> - The video will be expired on Facebook</li>
-            <li><strong>No action</strong> - Nothing happens to the Facebook video</li>
+            <li><strong>Supprimer la vidéo distribuée sur Facebook</strong> - La vidéo sera supprimée de Facebook</li>
+            <li><strong>Expire la vidéo distribuée sur Facebook</strong> - La vidéo expirera sur Facebook</li>
+            <li><strong>Aucune action</strong> - Rien ne se passe avec la vidéo Facebook</li>
           </ul>
         </li>
-        <li>Select what happens when the video metadata is changed:
+        <li>Sélectionnez ce qui se passe lorsque les métadonnées de la vidéo sont modifiées:
           <ul>
-            <li><strong>Update video metadata on Facebook</strong> - Changes to video metadata on the {{ site.product_short }} side will be synchronized to Facebook</li>
-            <li><strong>No action</strong> - No action is taken</li>
-          </ul>
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-fb-rules.png" /></figure>
+            <li><strong>Mettre à jour les métadonnées vidéo sur Facebook</strong> - Les modifications apportées aux métadonnées vidéo du côté {{site.product_short}} seront synchronisées avec Facebook</li>
+            <li><strong>Aucune action</strong> - Aucune action n'est entreprise</li>
+          </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-fb-rules.png" /></figure>
         </li>
-        <li>Click <span class="button-blue">Next</span>.</li>
-        <li>Confirm the Auto Sync settings and then click <span class="button-blue">Finish</span>.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-fb-confirm.png" /></figure>
+        <li>Cliquez sur<span class="button-blue"> Suivant</span>.</li>
+        <li>Confirmez les paramètres de synchronisation automatique, puis cliquez sur<span class="button-blue"> Terminer</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-fb-confirm.png" /></figure>
         </li>
       </ol>
     </div>
     <div id="twitter" class="BCL-subsection">
-      <h3>Configuring Twitter rules</h3>
+      <h3>Configuration des règles Twitter</h3>
       <ol class="bcls-tasklist-restart">
-        <li>Select what happens when a video is untagged or deleted from {{ site.product_short }}:
+        <li>Sélectionnez ce qui se passe lorsqu'une vidéo n'est pas balisée ou supprimée de {{site.product_short}}:
           <ul>
-            <li><strong>Delete distributed video on Twitter</strong> - The video will be removed from Twitter</li>
-            <li><strong>No action</strong> - Nothing happens to the Twitter video</li>
-          </ul>
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-twitter-rules.png" /></figure>
+            <li><strong>Supprimer la vidéo diffusée sur Twitter</strong> - La vidéo sera supprimée de Twitter</li>
+            <li><strong>Aucune action</strong> - Rien ne se passe avec la vidéo Twitter</li>
+          </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-twitter-rules.png" /></figure>
         </li>
-        <li>Click <span class="button-blue">Next</span>.</li>
-        <li>Confirm the Auto Sync settings and then click <span class="button-blue">Finish</span>.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-twitter-confirm.png" /></figure>
+        <li>Cliquez sur<span class="button-blue"> Suivant</span>.</li>
+        <li>Confirmez les paramètres de synchronisation automatique, puis cliquez sur<span class="button-blue"> Terminer</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-twitter-confirm.png" /></figure>
         </li>
       </ol>
     </div>
     <div id="linkedin" class="BCL-subsection">
-      <h3>Configuring LinkedIn rules</h3>
+      <h3>Configuration des règles LinkedIn</h3>
       <ol class="bcls-tasklist-restart">
-        <li>Select what happens when a video is untagged or deleted from {{ site.product_short }}:
+        <li>Sélectionnez ce qui se passe lorsqu'une vidéo n'est pas balisée ou supprimée de {{site.product_short}}:
           <ul>
-            <li><strong>Delete distributed video on LinkedIn</strong> - The video will be removed from LinkedIn</li>
-            <li><strong>No action</strong> - Nothing happens to the LinkedIn video</li>
+            <li><strong>Supprimer la vidéo distribuée sur LinkedIn</strong> - La vidéo sera supprimée de LinkedIn</li>
+            <li><strong>Aucune action</strong> - Rien ne se passe avec la vidéo LinkedIn</li>
           </ul>
         </li>
-        <li>Select what happens when the video metadata is changed:
+        <li>Sélectionnez ce qui se passe lorsque les métadonnées de la vidéo sont modifiées:
           <ul>
-            <li><strong>Update video metadata on LinkedIn</strong> - Changes to video metadata on the {{ site.product_short }} side will be synchronized to LinkedIn</li>
-            <li><strong>No action</strong> - No action is taken </li>
-          </ul>
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-linkedin-rules.png" /></figure>
+            <li><strong>Mettre à jour les métadonnées vidéo sur LinkedIn</strong> - Les modifications apportées aux métadonnées vidéo du côté {{site.product_short}} seront synchronisées avec LinkedIn</li>
+            <li><strong>Aucune action</strong> - Aucune action n'est entreprise </li>
+          </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-linkedin-rules.png" /></figure>
         </li>
-        <li>Click <span class="button-blue">Next</span>.</li>
-        <li>Confirm the Auto Sync settings and then click <span class="button-blue">Finish</span>.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-linkedin-confirm.png" /></figure>
+        <li>Cliquez sur<span class="button-blue"> Suivant</span>.</li>
+        <li>Confirmez les paramètres de synchronisation automatique, puis cliquez sur<span class="button-blue"> Terminer</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-linkedin-confirm.png" /></figure>
         </li>
       </ol>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="view">Viewing and editing Auto Sync jobs</h2>
-    <p>To view and edit the Auto Sync jobs that have been created, follow these steps:</p>
+    </div>  </section><section class="bcls-section">
+    <h2 id="view">Affichage et modification des tâches de synchronisation automatique</h2>
+    <p>Pour afficher et modifier les tâches de synchronisation automatique qui ont été créées, procédez comme suit:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Auto Sync</strong> in the left navigation. A list of all Auto Sync jobs that have been created will be displayed.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-autosync-list.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Auto Sync</strong> dans le volet de navigation de gauche. Une liste de toutes les tâches de synchronisation automatique qui ont été créées s'affiche. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-autosync-list.png" /></figure>
         <ul>
-          <li>Click the links in the <strong>Tags</strong> column to open the Media module and search based upon those tags.</li>
-          <li>Click the <strong>Destination</strong> column to open the publishing destination settings.</li>
-          <li>Click <strong>Delete</strong> to delete the sync job.</li>
+          <li>Cliquez sur les liens de la<strong> colonne</strong> Balises pour ouvrir le module Médias et effectuer une recherche basée sur ces balises.</li>
+          <li>Cliquez sur la<strong> colonne</strong> Destination pour ouvrir les paramètres de destination de publication.</li>
+          <li>Cliquez sur<strong> Supprimer</strong> pour supprimer la tâche de synchronisation.</li>
         </ul>
       </li>
-      <li>Click the link in the <strong>Auto Sync Name &amp; ID</strong> column name to open the sync properties.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-autosync-properties.png" /></figure>
+      <li>Cliquez sur le lien dans le nom de la<strong> colonne Nom et ID de la synchronisation</strong> automatique pour ouvrir les propriétés de synchronisation. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-autosync-properties.png" /></figure>
       </li>
-      <li>The <strong>STATUS</strong> can be set to:
+      <li>Le<strong> STATUS</strong> peut être réglé sur:
         <ul>
-          <li><strong>ACTIVE</strong> - Videos will be synchronized</li>
-          <li><strong>PAUSED</strong> - No videos will be synchronized</li>
+          <li><strong>ACTIVE</strong> - Les vidéos seront synchronisées</li>
+          <li><strong>PAUSED</strong> - Aucune vidéo ne sera synchronisée</li>
         </ul>
       </li>
-      <li>The <strong>SHOW</strong> list can be used to filter what is displayed.</li>
-      <li>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-settings-icon.png" />) to edit the Sync Settings. Click <span class="button-blue">Update</span> to save the changes.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-edit-sync-properties.png" /></figure>
+      <li>La<strong> liste</strong> SHOW peut être utilisée pour filtrer ce qui est affiché.</li>
+      <li>Cliquez sur l'icône des paramètres (<img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-settings-icon.png" />) pour modifier les paramètres de synchronisation. Cliquez sur<span class="button-blue"> Mettre</span> à jour pour enregistrer les modifications. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-edit-sync-properties.png" /></figure>
       </li>
-      <li>Click the delete icon (<img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-delete-icon.png" />) to delete the sync job.</li>
-    </ol>
-  </section>
-</article>
+      <li>Cliquez sur l'icône de suppression (<img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16642-delete-icon.png" />) pour supprimer la tâche de synchronisation.</li>
+    </ol>   </section></article>

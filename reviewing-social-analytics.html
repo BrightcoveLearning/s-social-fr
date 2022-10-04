@@ -1,101 +1,75 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <p>Brightcove Social provides several reports that can be used to monitor the performance of your videos that are posted to your social media accounts:</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <p>Brightcove Social fournit plusieurs rapports qui peuvent être utilisés pour surveiller les performances de vos vidéos publiées sur vos comptes de réseaux sociaux:</p>
     <ul>
-      <li><strong>Dashboard</strong> - Provides a high level overview of video performance on social media accounts. Covered in this topic.</li>
-      <li><strong>Social Views</strong> - Provides an overview of the social view for videos shared to social media accounts. For information, see <a href="/social/reviewing-social-views-analytics.html">Reviewing Social Views Analytics</a>.</li>
-      <li><strong>Social Engagement</strong> - Provides an overview of the social engagement (Likes, Shares, Retweets, etc.) for videos shared to social media accounts. For information, see <a href="/social/reviewing-social-engagement-analytics.html">Reviewing Social Engagement Analytics</a>.</li>
+      <li><strong>Tableau de bord</strong> - Fournit un aperçu de haut niveau des performances vidéo sur les comptes de réseaux sociaux. Couvert dans cette rubrique.</li>
+      <li><strong>Vues sociales</strong>: fournit une vue d'ensemble de la vue sociale des vidéos partagées sur des comptes de réseaux sociaux. Pour plus d'informations, voir<a href="/social/reviewing-social-views-analytics.html"> Révision de Social Views Analytics</a>.</li>
+      <li><strong>Engagement social</strong> - Fournit un aperçu de l'engagement social (J'aime, partages, retweets, etc.) pour les vidéos partagées sur des comptes de réseaux sociaux. Pour plus d'informations, voir<a href="/social/reviewing-social-engagement-analytics.html"> Révision de Social Engagement Analytics</a>.</li>
     </ul>
-    <p>To access the social analytics, open the Social module and click <strong>Social Analytics</strong> in the left navigation.&nbsp; </p>
-    <p>Start by <a href="#timespan">selecting a time span</a>. To select a report, click a tab at the top of the page. The dashboard is displayed by default.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="report tabs" src="/assets/images/s-social-img/node16643-report-tabs.png" /></figure>
+    <p>Pour accéder aux analyses sociales, ouvrez le module Social et cliquez sur<strong> Social Analytics</strong> dans le menu de navigation de gauche.&nbsp; </p>
+    <p>Commencez par<a href="#timespan"> sélectionner une période</a>. Pour sélectionner un rapport, cliquez sur un onglet en haut de la page. Le tableau de bord s'affiche par défaut. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="onglets de rapport" src="/assets/images/s-social-img/node16643-report-tabs.png" /></figure>
     </p>
-    <p>The Dashboard is organized into the following sections:</p>
+    <p>Le tableau de bord est organisé selon les sections suivantes:</p>
     <ul>
-      <li><a href="#videoviews">Video views at a glance</a></li>
-      <li><a href="#topdest">Top destinations</a></li>
-      <li><a href="#topvideos">Top videos</a></li>
-      <li><a href="#trend">Video views trend</a></li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="timespan">Selecting a time span</h2>
-    <p>To specify the time period for the reports, you can click on a quick date or use the calendar control. Social analytics data always uses the GMT time zone.</p>
+      <li><a href="#videoviews">Les vues vidéo en un coup d'œil</a></li>
+      <li><a href="#topdest">Les meilleures destinations</a></li>
+      <li><a href="#topvideos">Top vidéos</a></li>
+      <li><a href="#trend">Tendance des vues vidéo</a></li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="timespan">Sélection d'une période</h2>
+    <p>Pour spécifier la période des rapports, vous pouvez cliquer sur une date rapide ou utiliser le contrôle du calendrier. Les données d'analyse sociale utilisent toujours le fuseau horaire GMT.</p>
     <div class="BCL-subsection">
-      <h3>Using a quick date</h3>
-      <p>A series of quick dates are at the top of the page. The following quick dates are available:</p>
+      <h3>Utilisation d'une date rapide</h3>
+      <p>Une série de dates rapides se trouve en haut de la page. Les dates rapides suivantes sont disponibles:</p>
       <ul>
-        <li>Last 7 days</li>
-        <li>Last 30 days</li>
-        <li>Previous month</li>
-        <li>2 months ago</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="quick dates" src="/assets/images/s-social-img/node16643-quick-dates.png" /></figure>
-      <p>Click on a quick date to update the report.</p>
+        <li>Les 7 derniers jours</li>
+        <li>30 derniers jours</li>
+        <li>Mois précédent</li>
+        <li>il y a 2 mois</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="dates rapides" src="/assets/images/s-social-img/node16643-quick-dates.png" /></figure>
+      <p>Cliquez sur une date rapide pour mettre à jour le rapport.</p>
     </div>
     <div class="BCL-subsection">
-      <h3>Using the calendar control</h3>
-      <p>You can also select a start and end date by clicking on the calendar control.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="date selector" src="/assets/images/s-social-img/node16643-date-picker.png" /></figure>
-      <p>Click <strong>Apply</strong> to update the report.</p>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="videoviews">Video views at a glance</h2>
-    <p>The Video Views at a Glance section will display the number of video views from Brightcove players, Facebook, YouTube, LinkedIn and total views for the time period selected. The Updated date is the latest date that {{ site.product_short }} has social analytics data for. Typically, there is a 24-48+ hour delay before social platforms update the views and engagement data in their APIs.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: The button "Create Post With Video" in Facebook analytics will create a new secondary post of your video added to the one created by Brightcove Social, causing the appearance of two identical video posts. Brightcove Social Analytics will only present the data from the original one.</aside>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="views at a glance" src="/assets/images/s-social-img/node16643-video-views.png" /></figure>
-    <aside class="bcls-aside bcls-aside--information">Note: The Twitter Insights APIs don't report media views therefore viewing data is not available as part of the social analytics.</aside>
-    <p>Clicking on the <strong>MY SITES &amp; APPS</strong> link will open the Video Cloud Analytics Performance Report.</p>
-    <p>Note that views are counted differently by each social media platform:</p>
+      <h3>Utilisation du contrôle du calendrier</h3>
+      <p>Vous pouvez également sélectionner une date de début et de fin en cliquant sur le contrôle du calendrier.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="sélecteur de date" src="/assets/images/s-social-img/node16643-date-picker.png" /></figure>
+      <p>Cliquez sur<strong> Appliquer</strong> pour mettre à jour le rapport.</p>
+    </div>  </section><section class="bcls-section">
+    <h2 id="videoviews">Les vues vidéo en un coup d'œil</h2>
+    <p>La section Video Views at a Glance affiche le nombre de visionnages de vidéos des lecteurs Brightcove, Facebook, YouTube, LinkedIn et le nombre total de vues pour la période sélectionnée. La date de mise à jour est la dernière date pour laquelle {{site.product_short}} dispose de données d'analyse sociale. En général, il y a un délai de plus de 24 à 48 heures avant que les plateformes sociales ne mettent à jour les vues et les données d'engagement dans leurs API.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Le bouton Créer une publication avec vidéo-fr/ dans Facebook Analytics créera une nouvelle publication secondaire de votre vidéo ajoutée à celle créée par Brightcove Social, ce qui provoquera l'apparition de deux publications vidéo identiques. Brightcove Social Analytics ne présentera que les données de l'original.</aside> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="vues en un coup d'œil" src="/assets/images/s-social-img/node16643-video-views.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: Les API Twitter Insights ne signalent pas les vues des médias. Par conséquent, les données de visionnage ne sont pas disponibles dans le cadre des analyses sociales.</aside>
+    <p>Cliquez sur le<strong> lien</strong> MES SITES ET APPLICATIONS pour ouvrir le rapport de performance de Video Cloud Analytics.</p>
+    <p>Notez que les vues sont comptabilisées différemment selon les plateformes de réseaux sociaux:</p>
     <ul>
-      <li><strong>My Sites &amp; Apps</strong> - Brightcove counts a video view when a video begins to play</li>
-      <li><strong>Facebook</strong> - Video view counted when viewer watches a video for at least 3 seconds</li>
-      <li><strong>YouTube</strong> - Video view counted when viewer watches a video for "around" 30 seconds</li>
+      <li><strong>Mes sites et applications</strong>: Brightcove comptabilise le nombre de vues d'une vidéo lorsqu'une vidéo commence à être lue</li>
+      <li><strong>Facebook</strong> - Le nombre de vues de la vidéo est compté lorsque le spectateur regarde une vidéo pendant au moins 3 secondes</li>
+      <li><strong>YouTube</strong> - Le nombre de vues de la vidéo est compté lorsque le spectateur regarde une vidéo pendant environ-fr/ 30 secondes</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="topdest">Les meilleures destinations</h2>
+    <p>La section Destinations les plus visitées affiche les 5 destinations ayant enregistré le plus de vues pendant la période sélectionnée.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="destinations les plus populaires" src="/assets/images/s-social-img/node16643-top-dest.png" /></figure>
+    <p>Cliquez sur le titre de la vidéo pour ouvrir l'analyse des vues<a href="/social/reviewing-social-views-analytics.html"> sociales</a> de cette vidéo.</p>  </section><section class="bcls-section">
+    <h2 id="topvideos2">Top vidéos</h2>
+    <p>La section Top Videos affichera les 5 meilleures vidéos ayant été visionnées le plus pour la période sélectionnée.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="meilleures vidéos" src="/assets/images/s-social-img/node16643-top-videos.png" /></figure>
+    <p>Cliquez sur le titre de la vidéo pour ouvrir l'analyse des vues<a href="/social/reviewing-social-views-analytics.html"> sociales</a> de cette vidéo.</p>  </section><section class="bcls-section">
+    <h2 id="trend">Tendance des vues vidéo</h2>
+    <p>Le graphique Tendance des vues de vidéos affiche le nombre de vues des vidéos publiées sur vos comptes de réseaux sociaux pendant la période sélectionnée. Le survol d'une ligne du graphique affichera les données de cette date.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Les API Twitter Insights ne signalent pas les vues des médias. Par conséquent, les données de visionnage ne sont pas disponibles dans le cadre des analyses sociales.</aside> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="tendance des vues vidéo" src="/assets/images/s-social-img/node16643-video-views-graph.png" /></figure>
+    <p>La légende à droite du graphique peut être utilisée pour sélectionner le niveau de détail à afficher:</p>
+    <ul>
+      <li><strong>Mes sites et applications</strong>: affiche le nombre de visionnages de vidéos des lecteurs et applications Brightcove</li>
+      <li><strong>Facebook</strong> - Afficher le nombre de vidéos vues sur Facebook</li>
+      <li><strong>YouTube</strong> - Afficher le nombre de visionnages de vidéos sur YouTube</li>
+      <li><strong>LinkedIn</strong> - Afficher le nombre de visionnages de vidéos sur LinkedIn</li>
+      <li><strong>Total</strong>: affiche le nombre total de visionnages de vidéos sur toutes les plateformes</li>
     </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="topdest">Top destinations</h2>
-    <p>The Top Destinations section will display the top 5 destinations that had the most views for the time period selected.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="top destinations" src="/assets/images/s-social-img/node16643-top-dest.png" /></figure>
-    <p>Clicking on the video title will open the <a href="/social/reviewing-social-views-analytics.html">social views analytics</a> for that video.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="topvideos2">Top videos</h2>
-    <p>The Top Videos section will display the top 5 videos with the most views for the time period selected.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="top videos" src="/assets/images/s-social-img/node16643-top-videos.png" /></figure>
-    <p>Clicking on the video title will open the <a href="/social/reviewing-social-views-analytics.html">social views analytics</a> for that video.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="trend">Video views trend</h2>
-    <p>The Video Views Trend graph will display the number of video views for the videos posted to your social media accounts for the time period selected. Hovering over a line in the graph will display the data for that date.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: The Twitter Insights APIs don't report media views therefore viewing data is not available as part of the social analytics.</aside>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="video views trend" src="/assets/images/s-social-img/node16643-video-views-graph.png" /></figure>
-    <p>The legend to the right of the graph can be used to select the level of detail to display:</p>
+    <p>Les vues YouTube affichées dans les rapports d'analyse sont collectées à partir du<a href="https://youtube.com/analytics"> rapport</a> YouTube Analytics Overview. YouTube ne garantit pas que ces données sont des données en temps réel. Par conséquent, il se peut que vous constatiez des retards de plusieurs jours avant que les vues et l'engagement n'apparaissent dans ce rapport. Une fois que les données se trouvent dans YouTube Analytics, elles sont récupérées par les collecteurs de données nocturnes pour Brightcove Social Analytics.</p>
+    <p>Si vous avez besoin de données de visionnage en temps réel plus récentes, YouTube fournit également des rapports<a href="https://support.google.com/youtube/answer/6096647"> en temps réel</a> avec des estimations des données de visionnage au cours des 48 dernières heures pour vos 25 vidéos les plus récemment publiées. Vous trouverez le rapport en temps réel de votre chaîne YouTube<a href="https://www.youtube.com/analytics?o=U#r=realtime"> ici</a>. Brightcove Social Analytics ne collecte pas ces données en temps réel car elles fournissent des estimations de vues (par opposition aux vues réelles) et ne s'appliquent qu'aux vidéos récentes.</p>  </section><section class="bcls-section">
+    <h2 id="deletedvideos">Vidéos supprimées</h2>
+    <p>La manière dont les analyses sociales apparaissent pour les vidéos supprimées dépend de la manière dont la vidéo a été distribuée et, si la vidéo a été synchronisée automatiquement, des paramètres de synchronisation automatique.</p>
     <ul>
-      <li><strong>My Sites &amp; Apps</strong> - Display the number of video views from Brightcove players and apps</li>
-      <li><strong>Facebook</strong> - Display the number of video views on Facebook</li>
-      <li><strong>YouTube</strong> - Display the number of video views on YouTube</li>
-      <li><strong>LinkedIn</strong> - Display the number of video views on LinkedIn</li>
-      <li><strong>Total</strong> - Display the total number of video views across all platforms</li>
-    </ul>
-    <p>The YouTube views shown in the analytics reports are collected from the <a href="https://youtube.com/analytics">YouTube Analytics Overview</a> report. YouTube does not guarantee that this data is real-time data. Therefore, you may see delays of several days before the views and engagement appear in this report. Once the data is in the YouTube Analytics, it will be picked up by the nightly data collectors for the Brightcove Social Analytics.</p>
-    <p>If you need more recent real-time viewing data, YouTube also provides <a href="https://support.google.com/youtube/answer/6096647">real-time reports</a> with estimates of viewing data during the past 48 hours for your top 25 most recently published videos. You can find the real-time report for your YouTube channel <a href="https://www.youtube.com/analytics?o=U#r=realtime">here</a>. Brightcove Social Analytics is not collecting this real-time data since it provides estimated views (as opposed to actuals) and only applies to recent videos.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="deletedvideos">Deleted videos</h2>
-    <p>How social analytics appear for deleted videos depends on how the video was distributed, and, if the video was AutoSync'd, what the AutoSync settings were.</p>
-    <ul>
-      <li>If the video was distributed using the social publish feature, deleting it from {{ site.product_short }} does not remove the video from the social platform and Social will continue to collect analytics for the video</li>
-      <li>If the video was distributed using the AutoSync feature, deleting it from {{ site.product_short }} may delete the video from the social platform, depending on the AutoSync settings:
+      <li>Si la vidéo a été diffusée à l'aide de la fonctionnalité de publication sur les réseaux sociaux, sa suppression de {{site.product_short}} ne supprime pas la vidéo de la plateforme sociale et Social continuera à collecter des analyses pour la vidéo</li>
+      <li>Si la vidéo a été distribuée à l'aide de la fonctionnalité AutoSync, sa suppression de {{site.product_short}} peut entraîner la suppression de la vidéo de la plateforme sociale, selon les paramètres d'AutoSync:
         <ul>
-          <li>If the 'Delete distributed video on &lt;social platform&gt;' option was selected, then the Social module would have removed the video from the social platform and would stop trying to collect analytics data.</li>
-          <li>If any of the options that leave the video on the social platform (exact details of these options vary from platform to platform) were chosen, then the Social module will continue to attempt to collect analytics for it.</li>
+          <li>Si l'option Supprimer la vidéo distribuée sur la plateforme &lt;sociale &gt;-fr/ était sélectionnée, le module Social aurait supprimé la vidéo de la plateforme sociale et cesserait d'essayer de collecter des données d'analyse.</li>
+          <li>Si l'une des options qui laissent la vidéo sur la plateforme sociale (les détails exacts de ces options varient d'une plateforme à l'autre) a été choisie, le module Social continuera à tenter de recueillir des analyses pour celle-ci.</li>
         </ul>
       </li>
-      <li>Social analytics will continue to display any existing social analytics data for videos that have been deleted</li>
-    </ul>
-  </section>
-</article>
+      <li>Social Analytics continuera d'afficher toutes les données d'analyse sociale existantes pour les vidéos qui ont été supprimées.</li>
+    </ul>   </section></article>

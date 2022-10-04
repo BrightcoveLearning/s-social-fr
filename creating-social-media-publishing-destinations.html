@@ -1,340 +1,282 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    {% if site.product_short == "Video Cloud" %}
-    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5017980985001">&nbsp;</div>
-    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
-    {% endif %}
-    <p>A publishing destination is a social media account/page that you wish to publish {{ site.product_short }} videos to. Before you can publish videos to social media accounts using Brightcove Social, you have to create at least one destination. Destinations can be created to publish videos to YouTube, Facebook, Twitter and LinkedIn.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="youtube">Creating a YouTube destination</h2>
-    <p>Create a YouTube destination when you want to publish videos to a YouTube channel. Before creating a YouTube destination, you may want to <a href="https://www.youtube.com/verify">verify your YouTube account</a>. Once you've verified your account, you will be able to upload videos longer than 15 minutes.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: If the <a href="https://support.google.com/youtube/answer/55759#zippy=%2Chide-your-channel-temporarily" target="_blank">YouTube channel is hidden</a>, the destination won't work. You will need to reactivate the channel in YouTube to see the videos uploaded and re-connect the {{ site.product_short }} destination to send videos. </aside>
-    <p>To create a YouTube destination, follow these steps.</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section"> {% if site.product_short == Video Cloud-fr/ %}
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5017980985001">&nbsp;</div> <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> {% endif %}
+    <p>Une destination de publication est un compte/une page de réseau social sur lequel vous souhaitez publier {{site.product_short}} vidéos. Avant de pouvoir publier des vidéos sur des comptes de réseaux sociaux à l'aide de Brightcove Social, vous devez créer au moins une destination. Les destinations peuvent être créées pour publier des vidéos sur YouTube, Facebook, Twitter et LinkedIn.</p>  </section><section class="bcls-section">
+    <h2 id="youtube">Création d'une destination YouTube</h2>
+    <p>Créez une destination YouTube lorsque vous souhaitez publier des vidéos sur une chaîne YouTube. Avant de créer une destination YouTube, vous pouvez<a href="https://www.youtube.com/verify"> vérifier votre compte YouTube</a>. Une fois que vous aurez vérifié votre compte, vous pourrez mettre en ligne des vidéos de plus de 15 minutes.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Si la chaîne<a href="https://support.google.com/youtube/answer/55759#zippy=%2Chide-your-channel-temporarily" target="_blank"> YouTube est masquée</a>, la destination ne fonctionnera pas. Vous devrez réactiver la chaîne YouTube pour voir les vidéos mises en ligne et reconnecter la destination {{site.product_short}} pour envoyer des vidéos. </aside>
+    <p>Pour créer une destination YouTube, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Destinations</strong> in the left navigation.</li>
-      <li>Click <span class="button-blue">Add Destination</span>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-add-destination.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Destinations</strong> dans le menu de navigation de gauche.</li>
+      <li>Cliquez sur<span class="button-blue"> Ajouter une destination</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-add-destination.png" /></figure>
       </li>
-      <li>Click <strong>Sign in with YouTube</strong>.</li>
-      <li>You will be prompted to login to your Google account (if not already signed in). If you have multiple accounts, make sure you login to the account associated with your YouTube channel.</li>
-      <li>A dialog will open requesting permission to manage your YouTube account. Check the upper right of the dialog to confirm you are using the correct Google account. If not, use the drop down to select the Google account you want to distribute videos to. Click <strong>Allow</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-yt-dest.png" /></figure>
+      <li>Cliquez sur<strong> Se connecter avec YouTube</strong>.</li>
+      <li>Vous serez invité à vous connecter à votre compte Google (si ce n'est pas déjà fait). Si vous avez plusieurs comptes, assurez-vous de vous connecter au compte associé à votre chaîne YouTube.</li>
+      <li>Une boîte de dialogue s'ouvre pour demander l'autorisation de gérer votre compte YouTube. Vérifiez en haut à droite de la boîte de dialogue pour confirmer que vous utilisez le bon compte Google. Si ce n'est pas le cas, utilisez le menu déroulant pour sélectionner le compte Google sur lequel vous souhaitez diffuser des vidéos. Cliquez sur<strong> Autoriser</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-yt-dest.png" /></figure>
       </li>
-      <li>Give the destination a unique, descriptive name. Click <span class="button-blue">Add</span>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-yt-dest.png" /></figure>
+      <li>Donnez à la destination un nom descriptif unique. Cliquez sur<span class="button-blue"> Ajouter</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-yt-dest.png" /></figure>
       </li>
-      <li>Basic information and the destination defaults will be displayed. Click the  <span class="button-blue">Edit</span> button in the <strong>Basic info</strong> section to edit the destination name. See the <a href="#youtube_defaults">Setting YouTube defaults</a> section for information on configuring default values.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-yt-dest-created.png" /></figure>
+      <li>Les informations de base et les paramètres de destination par défaut s'affichent. Cliquez sur le<span class="button-blue"> bouton</span> Modifier dans la<strong> section Informations</strong> de base pour modifier le nom de la destination. Consultez la<a href="#youtube_defaults"> section</a> Définition des valeurs par défaut de YouTube pour plus d'informations sur la configuration des valeurs par défaut. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-yt-dest-created.png" /></figure>
       </li>
-      <li>Click <strong>Destinations</strong> in the left margin and confirm that the destination appears in the list of destinations. The value below the destination name is the destination ID.</li>
-    </ol>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-yt-dest-added.png" /></figure>
-    <p>Click the <strong>Destination Name</strong> to edit the destination. Click the link in the <strong>Channel/Page</strong> column to open the YouTube channel in another browser tab.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="youtube_defaults">Setting YouTube defaults</h2>
-    <p>The destination default values will be used as the default video properties when <a href="/social/publishing-videos-social-media-platforms.html">publishing videos to social platforms</a>. To configure publishing defaults for YouTube destination, click on the destination name and then click <span class="button-blue">Edit</span> in the <strong>Defaults for this destination</strong> section. The following video properties can be configured:</p>
+      <li>Cliquez sur<strong> Destinations</strong> dans la marge de gauche et vérifiez que la destination apparaît dans la liste des destinations. La valeur située sous le nom de la destination est l'ID de destination.</li>
+    </ol> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-yt-dest-added.png" /></figure>
+    <p>Cliquez sur le nom de<strong> la</strong> destination pour modifier la destination. Cliquez sur le lien dans la<strong> colonne</strong> Channel/Page pour ouvrir la chaîne YouTube dans un autre onglet du navigateur.</p>  </section><section class="bcls-section">
+    <h2 id="youtube_defaults">Définition des paramètres par défaut de YouTube</h2>
+    <p>Les valeurs par défaut de destination seront utilisées comme propriétés vidéo par défaut lors de la<a href="/social/publishing-videos-social-media-platforms.html"> publication de vidéos sur les plateformes sociales</a>. Pour configurer les paramètres de publication par défaut pour la destination YouTube, cliquez sur le nom de la destination, puis cliquez sur<span class="button-blue"> Modifier</span> dans la<strong> section</strong> Valeurs par défaut de cette destination. Les propriétés vidéo suivantes peuvent être configurées:</p>
     <ul>
-      <li><a href="#ytpostinfo">Post Info</a></li>
-      <li><a href="#ytschedule">Schedule</a></li>
-      <li><a href="#ytcaptions">Captions</a></li>
-      <li><a href="#ytvisibility">Visibility</a></li>
-      <li><a href="#ytlicense">License</a></li>
-      <li><a href="#ytlive">Live</a></li>
+      <li><a href="#ytpostinfo">Infos sur le poste</a></li>
+      <li><a href="#ytschedule">Horaire</a></li>
+      <li><a href="#ytcaptions">Légendes</a></li>
+      <li><a href="#ytvisibility">Visibilité</a></li>
+      <li><a href="#ytlicense">Licence</a></li>
+      <li><a href="#ytlive">En direct</a></li>
     </ul>
     <div id="ytpostinfo" class="BCL-subsection">
-      <h3>Configuring the Post Info properties</h3>
-      <p>Click on the <strong>Post Info</strong> link. The following YouTube video properties can be set:</p>
+      <h3>Configuration des propriétés Post Info</h3>
+      <p>Cliquez sur le<strong> lien</strong> Post Info. Les propriétés vidéo YouTube suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Description</strong> - Options to use the {{ site.product_short }} short or long description or to enter a default description to use</li>
-        <li><strong>Original Language Code</strong> - Used to add translated video titles and descriptions to videos; Enter a 2 letter language code and select from the list</li>
-        <li><strong>YouTube Category</strong> - Content category for the video</li>
-        <li><strong>Tags</strong> - Option to include, or exclude, {{ site.product_short }} tags</li>
-        <li><strong>Include {{ site.product_short }} metadata as YouTube tags</strong> - Option to include the video ID and reference ID as YouTube tags</li>
-        <li><strong>Additional Tags</strong> - Option to enter additional tags for videos</li>
-        <li><strong>Thumbnail Source</strong> - Options to use the YouTube thumbnail, the {{ site.product_short }} thumbnail or to upload your own thumbnail image</li>
+        <li><strong>Description</strong>: options permettant d'utiliser la description courte ou longue {{site.product_short}} ou de saisir une description par défaut à utiliser</li>
+        <li><strong>Code de langue d'origine</strong> - Utilisé pour ajouter des titres et des descriptions de vidéos traduits aux vidéos&nbsp;; Entrez un code de langue à 2 lettres et sélectionnez-le dans la liste</li>
+        <li><strong>Catégorie YouTube</strong>: catégorie de contenu de la vidéo</li>
+        <li><strong>Tags</strong>: option permettant d'inclure ou d'exclure les balises {{site.product_short}}</li>
+        <li><strong>Inclure les métadonnées {{site.product_short}} en tant que balises YouTube</strong> - Option permettant d'inclure l'identifiant de la vidéo et l'ID de référence en tant que balises YouTube</li>
+        <li><strong>Tags supplémentaires</strong> - Possibilité de saisir des balises supplémentaires pour les vidéos</li>
+        <li><strong>Source de la miniature</strong>: options permettant d'utiliser la miniature YouTube, la miniature {{site.product_short}} ou de télécharger votre propre image miniature</li>
       </ul>
     </div>
     <div id="ytschedule" class="BCL-subsection">
-      <h3>Configuring the Schedule properties</h3>
-      <p>Click on the <strong>Schedule</strong> link and select a schedule setting:</p>
+      <h3>Configuration des propriétés de planification</h3>
+      <p>Cliquez sur le<strong> lien</strong> Planifier et sélectionnez un paramètre de planification:</p>
       <ul>
-        <li><strong>Publish immediately</strong> - To publish the video immediately</li>
-        <li><strong>Use Video Cloud start date</strong> - To use the Video Cloud start date set for the video. In this case, we tell YouTube to make the video public as of the 'Scheduled Start Date' specified in Video Cloud. If that date is in the past, YouTube makes the video public immediately.</li>
-      </ul>
-      <aside class="bcls-aside bcls-aside--information">Note: To have the <a href="#ytvisibility">video visibility</a> set to <strong>Unlisted</strong> or <strong>Private</strong>, set the <strong>Schedule</strong> option to <strong>Publish immediately</strong> and set the <strong>Visibility</strong> option to <strong>Unlisted</strong> or <strong>Private</strong>.</aside>
+        <li><strong>Publier immédiatement</strong> - Pour publier la vidéo immédiatement</li>
+        <li><strong>Utiliser la date de début de Video Cloud</strong>: permet d'utiliser la date de début de Video Cloud définie pour la vidéo. Dans ce cas, nous demandons à YouTube de rendre la vidéo publique à compter de la date de début prévue-fr/ spécifiée dans Video Cloud. Si cette date est passée, YouTube rend la vidéo publique immédiatement.</li>
+      </ul> <aside class="bcls-aside bcls-aside--information">Remarque: Pour que la visibilité de la<a href="#ytvisibility"> vidéo soit</a> définie sur<strong> Non répertoriée</strong> ou<strong> Privée</strong>, définissez l'<strong>option</strong> Planifier sur <strong>Publiez immédiatement</strong> et définissez l'<strong>option</strong> Visibilité sur<strong> Non répertorié</strong> ou<strong> Privé</strong>.</aside>
     </div>
     <div id="ytcaptions" class="BCL-subsection">
-      <h3>Configuring the Captions properties</h3>
-      <p>Click on the <strong>Captions</strong> link and select an option:</p>
+      <h3>Configuration des propriétés Captions</h3>
+      <p>Cliquez sur le<strong> lien</strong> Légendes et sélectionnez une option:</p>
       <ul>
-        <li><strong>Use Video Cloud captions</strong> - The Social module will attempt to distribute the captions associated with the video to YouTube. The Social module will attempt to access captions files no matter where they are. If a remote URL is used to specify the location of the caption files and the files are accessible (e.g., not geo-restricted in such a way that we can't get to them) then Social will distribute them to YouTube.</li>
-        <li><strong>No captions</strong> - No captions are used</li>
-      </ul>
-      <aside class="bcls-aside bcls-aside--information">Note: For information on working with captions in Video Cloud, see <a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.</aside>
+        <li><strong>Utiliser les sous-titres de Video Cloud</strong> - Le module Social tentera de distribuer les sous-titres associés à la vidéo sur YouTube. Le module Social tentera d'accéder aux fichiers de sous-titres où qu'ils se trouvent. Si une URL distante est utilisée pour spécifier l'emplacement des fichiers de sous-titres et que les fichiers sont accessibles (par exemple, sans restriction géographique de telle sorte que nous ne puissions pas y accéder), Social les distribuera sur YouTube.</li>
+        <li><strong>Aucune légende</strong> - Aucune légende n'est utilisée</li>
+      </ul> <aside class="bcls-aside bcls-aside--information">Remarque: Pour plus d'informations sur l'utilisation des sous-titres dans Video Cloud, voir<a href="/media/overview-adding-captions-video.html"> Présentation: Ajout de sous-titres à une vidéo</a>.</aside>
     </div>
     <div id="ytvisibility" class="BCL-subsection">
-      <h3>Configuring the Visibility properties</h3>
-      <p>Click on the <strong>Visibility</strong> link and select a Privacy setting for the video. The following Privacy settings are available:</p>
+      <h3>Configuration des propriétés de visibilité</h3>
+      <p>Cliquez sur le<strong> lien</strong> Visibilité et sélectionnez un paramètre de confidentialité pour la vidéo. Les paramètres de confidentialité suivants sont disponibles:</p>
       <ul>
-        <li><strong>Public</strong> - Anyone can view the video</li>
-        <li><strong>Unlisted</strong> - Anyone who has the link to the video can view it</li>
-        <li><strong>Private</strong> - Video can only be seen by you and the users you select</li>
-        <li><strong>Use YT_Privacy_Status Custom Field</strong> - Dynamically assigns the privacy setting using a custom field associated with the video. For information, see <a href="/social/setting-privacy-status-video.html">Setting the Privacy Status for a Video</a>.</li>
+        <li><strong>Public</strong> - Tout le monde peut visionner la vidéo</li>
+        <li><strong>Non listé</strong> - Toute personne disposant du lien vers la vidéo peut la visionner</li>
+        <li><strong>Privé</strong> - La vidéo ne peut être vue que par vous et les utilisateurs que vous sélectionnez</li>
+        <li><strong>Use YT_Privacy_Status Custom Field</strong> - Attribue dynamiquement le paramètre de confidentialité à l'aide d'un champ personnalisé associé à la vidéo. Pour plus d'informations, consultez la section<a href="/social/setting-privacy-status-video.html"> Définition de l'état de confidentialité d'une vidéo</a>.</li>
       </ul>
-      <p>There is also a setting to <strong>Notify subscribers when video is posted to YouTube</strong>. If checked, your subscribers will see your videos in their Subscriptions feed and may receive a notification that the video was uploaded.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: For more information on the YouTube Privacy settings, see the <a href="https://support.google.com/youtube/answer/157177">YouTube documentation</a>.</aside>
+      <p>Il existe également un paramètre permettant d'<strong>avertir les abonnés lorsque la vidéo est publiée sur YouTube</strong>. Si cette case est cochée, vos abonnés verront vos vidéos dans leur flux Abonnements et peuvent recevoir une notification les informant que la vidéo a été mise en ligne.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Pour plus d'informations sur les paramètres de confidentialité de YouTube, consultez la documentation<a href="https://support.google.com/youtube/answer/157177"> YouTube</a>.</aside>
     </div>
     <div id="ytlicense" class="BCL-subsection">
-      <h3>Configuring the License properties</h3>
-      <p>Click on the <strong>License</strong> link and select a License and Rights Ownership setting for the video. The following settings are available:</p>
+      <h3>Configuration des propriétés de licence</h3>
+      <p>Cliquez sur le<strong> lien</strong> Licence et sélectionnez un paramètre Licence et droits de propriété pour la vidéo. Les paramètres suivants sont disponibles:</p>
       <ul>
-        <li>Standard YouTube License</li>
+        <li>Licence YouTube standard</li>
         <li>Creative Commons - Attribution</li>
-      </ul>
-      <aside class="bcls-aside bcls-aside--information">Note: For more information on YouTube License and Rights Ownership, see the <a href="https://support.google.com/youtube/answer/2797468">YouTube documentation</a>.</aside>
+      </ul> <aside class="bcls-aside bcls-aside--information">Remarque: Pour plus d'informations sur la licence YouTube et la propriété des droits, consultez la documentation<a href="https://support.google.com/youtube/answer/2797468"> YouTube</a>.</aside>
     </div>
     <div id="ytlive" class="BCL-subsection">
-      <h3>Configuring the Live properties</h3>
-      <p>Click on the <strong>Live</strong> link and select the <strong>DVR</strong> setting for the video. The following settings are available:</p>
+      <h3>Configuration des propriétés Live</h3>
+      <p>Cliquez sur le<strong> lien</strong> Live et sélectionnez le<strong> paramètre</strong> DVR pour la vidéo. Les paramètres suivants sont disponibles:</p>
       <ul>
-        <li>Enable</li>
-        <li>Disable</li>
+        <li>Activer</li>
+        <li>Désactiver</li>
       </ul>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="facebook">Creating a Facebook destination</h2>
-    <p>Create a Facebook destination when you want to publish videos to a Facebook page. Note that videos can only be distributed to Facebook pages, not personal profile pages. To create a Facebook destination, follow these steps.</p>
+    </div>  </section><section class="bcls-section">
+    <h2 id="facebook">Création d'une destination Facebook</h2>
+    <p>Créez une destination Facebook lorsque vous souhaitez publier des vidéos sur une page Facebook. Notez que les vidéos ne peuvent être distribuées que sur des pages Facebook, et non sur des pages de profil personnelles. Pour créer une destination Facebook, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Destinations</strong> in the left navigation.</li>
-      <li>Click <span class="button-blue">Add Destination</span>.</li>
-      <li>Click<strong> Sign in with Facebook</strong>.</li>
-      <li>A dialog will open requesting you to log into your Facebook account. Enter your credentials and click <strong>Log In</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-fb-dest.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Destinations</strong> dans le menu de navigation de gauche.</li>
+      <li>Cliquez sur<span class="button-blue"> Ajouter une destination</span>.</li>
+      <li>Cliquez sur<strong> Se connecter avec Facebook</strong>.</li>
+      <li>Une boîte de dialogue s'ouvre pour vous demander de vous connecter à votre compte Facebook. Saisissez vos informations d'identification et cliquez sur<strong> Se connecter</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-fb-dest.png" /></figure>
       </li>
-      <li>A dialog will open confirming what Brightcove Social is allowed to do. Edit the settings as needed and then click <strong>Done</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-fb-dest1.png" /></figure>
+      <li>Une boîte de dialogue s'ouvre pour confirmer ce que Brightcove Social est autorisé à faire. Modifiez les paramètres selon vos besoins, puis cliquez sur<strong> Terminé</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-fb-dest1.png" /></figure>
       </li>
-      <li>A dialog will open confirming that Brightcove Social is linked to Facebook. Click <strong>OK</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-fb-dest2.png" /></figure>
+      <li>Une boîte de dialogue s'ouvre pour confirmer que Brightcove Social est lié à Facebook. Cliquez sur<strong> OK</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-fb-dest2.png" /></figure>
       </li>
-      <li>Give the destination a unique, descriptive name. If you have multiple Facebook pages, select the page to publish to using the dropdown list and then click <span class="button-blue">Add</span>.
-        <aside class="bcls-aside bcls-aside--information">Note: You can't publish videos to personal profile pages.</aside>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-fb-dest.png" /></figure>
+      <li>Donnez à la destination un nom descriptif unique. Si vous avez plusieurs pages Facebook, sélectionnez la page sur laquelle publier à l'aide de la liste déroulante, puis cliquez sur<span class="button-blue"> Ajouter</span>. <aside class="bcls-aside bcls-aside--information">Remarque: Vous ne pouvez pas publier de vidéos sur des pages de profil personnelles.</aside> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-fb-dest.png" /></figure>
       </li>
-      <li>Basic information and the destination defaults will be displayed. Click  <span class="button-blue">Edit</span>  in the <strong>Basic info</strong> section to edit the destination name. See the <a href="#facebook_defaults">Setting Facebook defaults</a> section for information on configuring default values.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-fb-dest-created.png" /></figure>
+      <li>Les informations de base et les paramètres de destination par défaut s'affichent. Cliquez sur<span class="button-blue"> Modifier</span> dans la<strong> section Informations</strong> de base pour modifier le nom de la destination. Consultez la<a href="#facebook_defaults"> section</a> Définition des valeurs par défaut de Facebook pour plus d'informations sur la configuration des valeurs par défaut. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-fb-dest-created.png" /></figure>
       </li>
-      <li>Click <strong>Destinations</strong> in the left margin and confirm that the destination appears in the list of destinations. The value below the destination name is the destination id.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-fb-dest-added.png" /></figure>
+      <li>Cliquez sur<strong> Destinations</strong> dans la marge de gauche et vérifiez que la destination apparaît dans la liste des destinations. La valeur située sous le nom de la destination est l'ID de destination. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-fb-dest-added.png" /></figure>
       </li>
     </ol>
-    <p>Click the destination name to edit the destination. Click the link in the Channel/Page column to open the Facebook page in another browser tab.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="facebook_defaults">Setting Facebook defaults</h2>
-    <p>The destination default values will be used as the default video properties when <a href="/social/publishing-videos-social-media-platforms.html">publishing videos to social platforms</a>. To configure publishing defaults for Facebook destinations, click on the destination name and then click <span class="button-blue">Edit</span> in the <strong>Defaults for this destination</strong> section. The following Facebook video properties can be configured:</p>
+    <p>Cliquez sur le nom de la destination pour modifier la destination. Cliquez sur le lien dans la colonne Canal/Page pour ouvrir la page Facebook dans un autre onglet du navigateur.</p>  </section><section class="bcls-section">
+    <h2 id="facebook_defaults">Définition des paramètres par défaut de Facebook</h2>
+    <p>Les valeurs par défaut de destination seront utilisées comme propriétés vidéo par défaut lors de la<a href="/social/publishing-videos-social-media-platforms.html"> publication de vidéos sur les plateformes sociales</a>. Pour configurer les paramètres de publication par défaut pour les destinations Facebook, cliquez sur le nom de la destination, puis cliquez sur<span class="button-blue"> Modifier</span> dans la<strong> section</strong> Valeurs par défaut pour cette destination. Les propriétés vidéo Facebook suivantes peuvent être configurées:</p>
     <ul>
-      <li><a href="#fbpostinfo">Post Info</a></li>
-      <li><a href="#fbschedule">Schedule</a></li>
-      <li><a href="#fbcaptions">Captions</a></li>
-      <li><a href="#fbtargeting">Target</a></li>
-      <li><a href="#fbmonetize">Monetize</a></li>
-      <li><a href="#fbrights">Rights</a></li>
+      <li><a href="#fbpostinfo">Infos sur le poste</a></li>
+      <li><a href="#fbschedule">Horaire</a></li>
+      <li><a href="#fbcaptions">Légendes</a></li>
+      <li><a href="#fbtargeting">Cible</a></li>
+      <li><a href="#fbmonetize">Monétisez</a></li>
+      <li><a href="#fbrights">Droits</a></li>
       <li><a href="#fbdistribution">Distribution</a></li>
-      <li><a href="#fbtracking">Tracking</a></li>
-      <li><a href="#fblive">Live</a></li>
+      <li><a href="#fbtracking">Suivi</a></li>
+      <li><a href="#fblive">En direct</a></li>
     </ul>
     <div id="fbpostinfo" class="BCL-subsection">
-      <h3>Configuring the Post Info properties</h3>
-      <p>Click on the <strong>Post Info</strong> link. The following Facebook video properties can be set:</p>
+      <h3>Configuration des propriétés Post Info</h3>
+      <p>Cliquez sur le<strong> lien</strong> Post Info. Les propriétés vidéo Facebook suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Status Message</strong> - Options to use the Video Cloud short or long description or to enter a default description to use</li>
-        <li><strong>Tags</strong> - Tags to help people discover your videos</li>
-        <li><strong>Facebook Category</strong> - Content category for the video</li>
-        <li><strong>Thumbnail Source</strong> - Options to use the Facebook thumbnail, the Video Cloud thumbnail or to upload your own thumbnail image</li>
+        <li><strong>Message d'état</strong>: options permettant d'utiliser la description courte ou longue de Video Cloud ou de saisir une description par défaut à utiliser</li>
+        <li><strong>Tags</strong> - Des tags pour aider les internautes à découvrir vos vidéos</li>
+        <li><strong>Catégorie Facebook</strong> - Catégorie de contenu de la vidéo</li>
+        <li><strong>Source de la vignette</strong>: options permettant d'utiliser la miniature Facebook, la miniature de Video Cloud ou de télécharger votre propre image miniature</li>
       </ul>
     </div>
     <div id="fbschedule" class="BCL-subsection">
-      <h3>Configuring the Schedule properties</h3>
-      <p>Click on the <strong>Schedule</strong> link. Select <strong>Publish immediately</strong> to publish the video immediately or select <strong>Use Video Cloud start date</strong> to use the start date set for the video. You can also <strong>Never expire posts </strong>or have <strong>Posts expire on Video Cloud end date</strong>.</p>
+      <h3>Configuration des propriétés de planification</h3>
+      <p>Cliquez sur le<strong> lien</strong> Planifier. Sélectionnez<strong> Publier immédiatement</strong> pour publier la vidéo immédiatement ou sélectionnez<strong> Utiliser la date de début de Video Cloud</strong> pour utiliser la date de début définie pour la vidéo. Vous pouvez également<strong> ne jamais faire expirer les publications</strong> ou<strong> les faire expirer à la date de fin de Video Cloud</strong>.</p>
     </div>
     <div id="fbcaptions" class="BCL-subsection">
-      <h3>Configuring the Captions properties</h3>
-      <p>Click on the <strong>Captions</strong> link. Select <strong>Use Video Cloud captions</strong> to use the captions associated with the video or <strong>No captions</strong> to not use captions.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: For information on working with captions in Video Cloud, see <a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.</aside>
+      <h3>Configuration des propriétés Captions</h3>
+      <p>Cliquez sur le<strong> lien</strong> Légendes. Sélectionnez<strong> Utiliser les sous-titres de Video Cloud</strong> pour utiliser les sous-titres associés à la vidéo ou<strong> Aucun sous-titre</strong> pour ne pas utiliser de sous-titres.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Pour plus d'informations sur l'utilisation des sous-titres dans Video Cloud, voir<a href="/media/overview-adding-captions-video.html"> Présentation: Ajout de sous-titres à une vidéo</a>.</aside>
     </div>
     <div id="fbtargeting" class="BCL-subsection">
-      <h3>Configuring the Target properties</h3>
-      <p>Click on the<strong> Target </strong>link. The following properties can be set:</p>
+      <h3>Configuration des propriétés Target</h3>
+      <p>Cliquez sur le<strong> lien</strong> Target. Les propriétés suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Audience Optimization Interests</strong> - Add tags to describe the interests of people who are most likely to enjoy your post. For information, see the <a href="https://www.facebook.com/facebookmedia/get-started/audience-optimization">Facebook documentation</a>.</li>
-        <li><strong>Location Restrictions</strong> - Add countries to include or exclude from seeing the post</li>
+        <li><strong>Intérêts d'optimisation de l'audience</strong> - Ajoutez des balises pour décrire les centres d'intérêt des personnes les plus susceptibles d'apprécier votre publication. Pour plus d'informations, consultez la documentation<a href="https://www.facebook.com/facebookmedia/get-started/audience-optimization"> Facebook</a>.</li>
+        <li><strong>Restrictions d'emplacement</strong> - Ajoutez des pays à inclure ou à exclure de la publication</li>
       </ul>
     </div>
     <div id="fbmonetize" class="BCL-subsection">
-      <h3>Configuring the Monetize properties</h3>
-      <p>Click on the<strong> Monetize </strong>link. The following properties can be set:</p>
+      <h3>Configuration des propriétés Monetize</h3>
+      <p>Cliquez sur le<strong> lien</strong> Monétiser. Les propriétés suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Who is your business partner for posts to this destination?</strong> - Add a business partner for branded content posts. As you type, a list of matching businesses will appear. For information on Facebook branded content, see the <a href="https://www.facebook.com/business/help/788160621327601">Facebook documentation</a>.</li>
-        <li><strong>Allow business partner to boost posts</strong></li>
+        <li><strong>Qui est votre partenaire commercial pour les publications vers cette destination&nbsp;? </strong>- Ajoutez un partenaire commercial pour les publications de contenu de marque. Au fur et à mesure que vous tapez, une liste des entreprises correspondantes s'affiche. Pour plus d'informations sur le contenu de marque Facebook, consultez la documentation<a href="https://www.facebook.com/business/help/788160621327601"> Facebook</a>.</li>
+        <li><strong>Permettre aux partenaires commerciaux de booster les publications</strong></li>
       </ul>
     </div>
     <div id="fbrights" class="BCL-subsection">
-      <h3>Configuring the Rights properties</h3>
-      <aside class="bcls-aside bcls-aside--information">Note: Your Facebook account must have access to the Facebook Rights Manager for the Rights option to appear.</aside>
-      <p>Click on the<strong> Rights </strong>link. The following properties can be set:</p>
+      <h3>Configuration des propriétés des droits</h3> <aside class="bcls-aside bcls-aside--information">Remarque: Votre compte Facebook doit avoir accès au Gestionnaire des droits de Facebook pour que l'option Droits apparaisse.</aside>
+      <p>Cliquez sur le<strong> lien</strong> Droits. Les propriétés suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Detect Matching Content</strong> - Check to enable Facebook rights management. For information, see the <a href="https://rightsmanager.fb.com">Facebook documentation</a>.</li>
-        <li><strong>Specify Ownership</strong> - Specify copyright ownership on video, audio, or both</li>
-        <li><strong>Country Selection</strong> - Select <strong>Worldwide</strong>, <strong>Include Countries</strong> or <strong>Exclude Countries</strong>. If include or exclude is selected, then add the <strong>Location Restrictions</strong>.</li>
-        <li><strong>Apply Match Rule</strong> - Select a rule. The <strong>Match Rule</strong> determines what automatic actions happen when people upload matched videos. Match Rules are managed inside of Facebook.</li>
-        <li><strong>Grant Permission</strong> - Authorize certain people or Pages or Instagram accounts to have permission to post videos matching your content.</li>
+        <li><strong>Détecter le contenu correspondant</strong> - Cochez cette case pour activer la gestion des droits Facebook Pour plus d'informations, consultez la documentation<a href="https://rightsmanager.fb.com"> Facebook</a>.</li>
+        <li><strong>Spécifier la propriété</strong> - Spécifiez le droit d'auteur sur la vidéo, l'audio ou les deux</li>
+        <li><strong>Sélection du pays</strong> - Sélectionnez<strong> le monde entier</strong>,<strong> incluez les pays</strong> ou<strong> excluez les pays</strong>. Si l'option Inclure ou exclure est sélectionnée, ajoutez les restrictions d'<strong>emplacement</strong>.</li>
+        <li><strong>Appliquer la règle de correspondance</strong> - Sélectionnez une règle. La règle de<strong> correspondance</strong> détermine les actions automatiques qui se produisent lorsque les utilisateurs téléchargent des vidéos correspondantes. Les règles de match sont gérées sur Facebook.</li>
+        <li><strong>Autoriser</strong> - Autorisez certaines personnes, Pages ou comptes Instagram à être autorisés à publier des vidéos correspondant à votre contenu.</li>
       </ul>
     </div>
     <div id="fbdistribution" class="BCL-subsection">
-      <h3>Configuring the Distribution properties</h3>
-      <p>Click on the <strong>Distribution</strong> link to set where the video can be seen. The following <strong>Custom Distribution and Moderation </strong>options are available:</p>
+      <h3>Configuration des propriétés de distribution</h3>
+      <p>Cliquez sur le<strong> lien</strong> Distribution pour définir l'endroit où la vidéo peut être visionnée. Les<strong> options de distribution</strong> personnalisée et de modération suivantes sont disponibles:</p>
       <ul>
-        <li><strong>Show in News Feed</strong> - Shows video in News Feed</li>
-        <li><strong>Allow Embedding</strong> - Allow video embeds on third-party sites</li>
-        <li><strong>Add as Secret Video</strong> - Videos will be accessible only via a direct URL and are not searchable for people on Facebook
+        <li><strong>Afficher dans le fil d'actualité</strong> - Affiche la vidéo dans le fil d'actualité</li>
+        <li><strong>Autoriser l'intégration</strong> - Autoriser l'intégration de vidéos sur des sites tiers</li>
+        <li><strong>Ajouter en tant que vidéo secrète</strong> - Les vidéos ne seront accessibles que via une URL directe et ne seront pas consultables sur Facebook
           <ul>
-            <li><strong>Turn off Reactions, Comments and Shares</strong> - Disallows likes and comments</li>
+            <li><strong>Désactiver les réactions, les commentaires et les partages</strong>: interdit les mentions J'aime et les commentaires</li>
           </ul>
         </li>
       </ul>
     </div>
     <div id="fbtracking" class="BCL-subsection">
-      <h3>Configuring the Tracking properties</h3>
-      <p>Click on the <strong>Tracking</strong> link to assign a universal ID to track the video across systems. The following <strong>Universal ID</strong> options are available:</p>
+      <h3>Configuration des propriétés de suivi</h3>
+      <p>Cliquez sur le<strong> lien</strong> Tracking (Suivi) pour attribuer un ID universel permettant de suivre la vidéo sur tous les systèmes. Les<strong> options d'identification</strong> universelle suivantes sont disponibles:</p>
       <ul>
-        <li>Leave Blank</li>
-        <li>Use Video ID from {{ site.product_short }}</li>
-        <li>Use Reference ID from {{ site.product_short }}, if present</li>
+        <li>Laisser en blanc</li>
+        <li>Utiliser l'identifiant vidéo de {{site.product_short}}</li>
+        <li>Utilisez l'ID de référence de {{site.product_short}}, le cas échéant</li>
       </ul>
     </div>
     <div id="fblive" class="BCL-subsection">
-      <h3>Configuring the Live properties</h3>
-      <p>Click on the <strong>Live</strong> link to configure the Facebook Live Video Settings. Enable <strong>Allow embedding</strong> to allow the video to be embedded on third-party websites.</p>
-      <p>Click on the <strong>Live</strong> link to configure the Facebook Live Video Settings. Enable <strong>Allow embedding</strong> to allow the video to be embedded on third-party websites.</p>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="twitter">Creating a Twitter destination</h2>
-    <p>Create a Twitter destination when you want to publish videos to a Twitter feed. To create a Twitter destination, follow these steps.</p>
+      <h3>Configuration des propriétés Live</h3>
+      <p>Cliquez sur le<strong> lien</strong> Live pour configurer les paramètres de Facebook Live Video. Activez<strong> Autoriser l'intégration</strong> pour autoriser l'intégration de la vidéo sur des sites Web tiers.</p>
+      <p>Cliquez sur le<strong> lien</strong> Live pour configurer les paramètres de Facebook Live Video. Activez<strong> Autoriser l'intégration</strong> pour autoriser l'intégration de la vidéo sur des sites Web tiers.</p>
+    </div>  </section><section class="bcls-section">
+    <h2 id="twitter">Création d'une destination Twitter</h2>
+    <p>Créez une destination Twitter lorsque vous souhaitez publier des vidéos sur un fil Twitter. Pour créer une destination Twitter, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Destinations</strong> in the left navigation.</li>
-      <li>Click <span class="button-blue">Add Destination</span>.</li>
-      <li>Select <strong>Sign in with Twitter</strong>.</li>
-      <li>You will be prompted to login to your Twitter account and authorize Brightcove Social to use your account. Login to the account you want to post videos to. If you are not prompted to login, you may be logged into a Twitter account. Make sure you are logged into the correct account before proceeding. Click <strong>Authorize App</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-twitter-dest.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Destinations</strong> dans le menu de navigation de gauche.</li>
+      <li>Cliquez sur<span class="button-blue"> Ajouter une destination</span>.</li>
+      <li>Sélectionnez<strong> Se connecter avec Twitter</strong>.</li>
+      <li>Vous serez invité à vous connecter à votre compte Twitter et à autoriser Brightcove Social à utiliser votre compte. Connectez-vous au compte sur lequel vous souhaitez publier des vidéos. Si vous n'êtes pas invité à vous connecter, vous êtes peut-être connecté à un compte Twitter. Assurez-vous d'être connecté au bon compte avant de poursuivre. Cliquez sur<strong> Autoriser l'application</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-twitter-dest.png" /></figure>
       </li>
-      <li>Give the destination a unique, descriptive name. Click <span class="button-blue">Add</span>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-twitter-dest.png" /></figure>
+      <li>Donnez à la destination un nom descriptif unique. Cliquez sur<span class="button-blue"> Ajouter</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-twitter-dest.png" /></figure>
       </li>
-      <li>Basic information and the destination defaults will be displayed. Click  <span class="button-blue">Edit</span> in the <strong>Basic info</strong> section to edit the destination name. See the <a href="#twitter_defaults">Setting Twitter defaults</a> section for information on configuring default values.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-twitter-dest-created.png" /></figure>
+      <li>Les informations de base et les paramètres de destination par défaut s'affichent. Cliquez sur<span class="button-blue"> Modifier</span> dans la<strong> section Informations</strong> de base pour modifier le nom de la destination. Consultez la<a href="#twitter_defaults"> section</a> Définition des valeurs par défaut de Twitter pour plus d'informations sur la configuration des valeurs par défaut. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-twitter-dest-created.png" /></figure>
       </li>
-      <li>Click <strong>Destinations</strong> in the left margin and confirm that the destination appears in the list of destinations. The value below the destination name is the destination id.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-twitter-dest-added.png" /></figure>
+      <li>Cliquez sur<strong> Destinations</strong> dans la marge de gauche et vérifiez que la destination apparaît dans la liste des destinations. La valeur située sous le nom de la destination est l'ID de destination. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-twitter-dest-added.png" /></figure>
       </li>
     </ol>
-    <p>Click the destination name to edit the destination. Click the link in the Channel/Page column to open the Twitter account in another browser tab.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="twitter_defaults">Setting Twitter defaults</h2>
-    <p>The destination default values will be used as the default video properties when <a href="/social/publishing-videos-social-media-platforms.html">publishing videos to social platforms</a>. To configure publishing defaults for Twitter destinations, click on the destination name and then click <span class="button-blue">Edit</span> in the <strong>Defaults for this destination</strong> section.</p>
-    <p>Configure the default <strong>Tweet Content</strong>:</p>
+    <p>Cliquez sur le nom de la destination pour modifier la destination. Cliquez sur le lien dans la colonne Canal/Page pour ouvrir le compte Twitter dans un autre onglet du navigateur.</p>  </section><section class="bcls-section">
+    <h2 id="twitter_defaults">Définition des paramètres par défaut de Twitter</h2>
+    <p>Les valeurs par défaut de destination seront utilisées comme propriétés vidéo par défaut lors de la<a href="/social/publishing-videos-social-media-platforms.html"> publication de vidéos sur les plateformes sociales</a>. Pour configurer les paramètres de publication par défaut pour les destinations Twitter, cliquez sur le nom de la destination, puis cliquez sur<span class="button-blue"> Modifier</span> dans la<strong> section</strong> Valeurs par défaut pour cette destination.</p>
+    <p>Configurez le contenu du<strong> tweet par défaut</strong>:</p>
     <ul>
-      <li>Use the video's name from Video Cloud</li>
-      <li>Use the TW_Tweet custom field from Video Cloud</li>
-      <li>Set a custom default Tweet</li>
-    </ul>
-  </section>
-<section class="bcls-section">
-    <h2 id="linkedin">Creating a LinkedIn destination</h2>
-    <p>Create a LinkedIn destination when you want to publish videos to LinkedIn. To create a LinkedIn destination, follow these steps.</p>
+      <li>Utilisez le nom de la vidéo dans Video Cloud</li>
+      <li>Utilisez le champ personnalisé TW_Tweet de Video Cloud</li>
+      <li>Définir un Tweet personnalisé par défaut</li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="linkedin">Création d'une destination LinkedIn</h2>
+    <p>Créez une destination LinkedIn lorsque vous souhaitez publier des vidéos sur LinkedIn. Pour créer une destination LinkedIn, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Destinations</strong> in the left navigation.</li>
-      <li>Click <span class="button-blue">Add Destination</span>.</li>
-      <li>Click<strong> Sign in with LinkedIn</strong>.</li>
-      <li>A dialog will open requesting you to log into your LinkedIn account. Enter your credentials and click <strong>Sign In</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-linkedin-dest.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Destinations</strong> dans le menu de navigation de gauche.</li>
+      <li>Cliquez sur<span class="button-blue"> Ajouter une destination</span>.</li>
+      <li>Cliquez sur<strong> Se connecter avec LinkedIn</strong>.</li>
+      <li>Une boîte de dialogue s'ouvre pour vous demander de vous connecter à votre compte LinkedIn. Saisissez vos informations d'identification et cliquez sur<strong> Se connecter</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-linkedin-dest.png" /></figure>
       </li>
-      <li>A dialog will open confirming what Brightcove Social is allowed to do. Click <strong>Allow</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-linkedin-dest1.png" /></figure>
+      <li>Une boîte de dialogue s'ouvre pour confirmer ce que Brightcove Social est autorisé à faire. Cliquez sur<strong> Autoriser</strong>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-auth-linkedin-dest1.png" /></figure>
       </li>
-      <li>Give the destination a unique, descriptive name. If you have multiple LinkedIn organizations, select the page to publish to using the dropdown list and then click <span class="button-blue">Add</span>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-linkedin-dest.png" /></figure>
+      <li>Donnez à la destination un nom descriptif unique. Si vous avez plusieurs organisations LinkedIn, sélectionnez la page sur laquelle publier à l'aide de la liste déroulante, puis cliquez sur<span class="button-blue"> Ajouter</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-name-linkedin-dest.png" /></figure>
       </li>
-      <li>Basic information and the destination defaults will be displayed. Click  <span class="button-blue">Edit</span>  in the <strong>Basic info</strong> section to edit the destination name. See the <a href="#linkedin_defaults">Setting Linkedin defaults</a> section for information on configuring default values.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-linkedin-dest-created.png" /></figure>
+      <li>Les informations de base et les paramètres de destination par défaut s'affichent. Cliquez sur<span class="button-blue"> Modifier</span> dans la<strong> section Informations</strong> de base pour modifier le nom de la destination. Consultez la<a href="#linkedin_defaults"> section</a> Définition des valeurs par défaut Linkedin pour plus d'informations sur la configuration des valeurs par défaut. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-linkedin-dest-created.png" /></figure>
       </li>
-      <li>Click <strong>Destinations</strong> in the left margin and confirm that the destination appears in the list of destinations. The value below the destination name is the destination id.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-linkedin-dest-added.png" /></figure>
+      <li>Cliquez sur<strong> Destinations</strong> dans la marge de gauche et vérifiez que la destination apparaît dans la liste des destinations. La valeur située sous le nom de la destination est l'ID de destination. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-linkedin-dest-added.png" /></figure>
       </li>
     </ol>
-    <p>Click the destination name to edit the destination. Click the link in the Channel/Page column to open the LinkedIn page in another browser tab.</p>
-  </section>
-<section class="bcls-section">
-    <h2 id="linkedin_defaults">Setting LinkedIn defaults</h2>
-    <p>The destination default values will be used as the default video properties when <a href="/social/publishing-videos-social-media-platforms.html">publishing videos to social platforms</a>. To configure publishing defaults for LinkedIn destinations, click on the destination name and then click <span class="button-blue">Edit</span> in the <strong>Defaults for this destination</strong> section. The following LinkedIn video properties can be configured:</p>
+    <p>Cliquez sur le nom de la destination pour modifier la destination. Cliquez sur le lien dans la colonne Canal/Page pour ouvrir la page LinkedIn dans un autre onglet du navigateur.</p>  </section><section class="bcls-section">
+    <h2 id="linkedin_defaults">Définition des paramètres par défaut de LinkedIn</h2>
+    <p>Les valeurs par défaut de destination seront utilisées comme propriétés vidéo par défaut lors de la<a href="/social/publishing-videos-social-media-platforms.html"> publication de vidéos sur les plateformes sociales</a>. Pour configurer les paramètres de publication par défaut pour les destinations LinkedIn, cliquez sur le nom de la destination, puis cliquez sur<span class="button-blue"> Modifier</span> dans la<strong> section</strong> Valeurs par défaut pour cette destination. Les propriétés vidéo LinkedIn suivantes peuvent être configurées:</p>
     <ul>
-      <li><a href="#linkedinpostinfo">Post Info</a></li>
-      <li><a href="#linkedinvisibility">Visibility</a></li>
-      <li><a href="#linkedincaptions">Captions</a></li>
+      <li><a href="#linkedinpostinfo">Infos sur le poste</a></li>
+      <li><a href="#linkedinvisibility">Visibilité</a></li>
+      <li><a href="#linkedincaptions">Légendes</a></li>
     </ul>
     <div id="linkedinpostinfo" class="BCL-subsection">
-      <h3>Configuring the Post Info properties</h3>
-      <p>Click on the <strong>Post Info</strong> link. The following LinkedIn video properties can be set:</p>
+      <h3>Configuration des propriétés Post Info</h3>
+      <p>Cliquez sur le<strong> lien</strong> Post Info. Les propriétés vidéo LinkedIn suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Commentary</strong> - Options to use the Video Cloud short or long description or to enter a default description to use</li>
-        <li><strong>Thumbnail Source</strong> - Options to use the Video Cloud thumbnail or the the LinkedIn thumbnail</li>
+        <li><strong>Commentaire</strong> - Options permettant d'utiliser la description courte ou longue de Video Cloud ou de saisir une description par défaut à utiliser</li>
+        <li><strong>Source de la vignette</strong>: options permettant d'utiliser la miniature Video Cloud ou la miniature LinkedIn</li>
       </ul>
     </div>
     <div id="linkedinvisibility" class="BCL-subsection">
-      <h3>Configuring the Visibility properties</h3>
-      <p>Click on the <strong>Visibility</strong> link and select a Visibility setting for the video. The following settings are available:</p>
+      <h3>Configuration des propriétés de visibilité</h3>
+      <p>Cliquez sur le<strong> lien</strong> Visibilité et sélectionnez un paramètre de visibilité pour la vidéo. Les paramètres suivants sont disponibles:</p>
       <ul>
-        <li><strong>PUBLIC</strong> - Anyone can view the video</li>
-        <li><strong>LOGGED IN</strong> - Anyone who is logged in  can view the video   </li>
+        <li><strong>PUBLIC</strong> - Tout le monde peut visionner la vidéo</li>
+        <li><strong>CONNECTÉ</strong> - Toute personne connectée peut visionner la vidéo   </li>
       </ul>
     </div>
     <div id="linkedincaptions" class="BCL-subsection">
-      <h3>Configuring the Captions properties</h3>
-      <p>Click on the <strong>Captions</strong> link. Select <strong>Use Video Cloud captions</strong> to use the captions associated with the video or <strong>No captions</strong> to not use captions.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: For information on working with captions in Video Cloud, see <a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.</aside>
-    </div>
-</section>
-  <section class="bcls-section">
-    <h2 id="delete">Deleting a destination</h2>
-    <p>To delete a destination, follow these steps:</p>
+      <h3>Configuration des propriétés Captions</h3>
+      <p>Cliquez sur le<strong> lien</strong> Légendes. Sélectionnez<strong> Utiliser les sous-titres de Video Cloud</strong> pour utiliser les sous-titres associés à la vidéo ou<strong> Aucun sous-titre</strong> pour ne pas utiliser de sous-titres.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Pour plus d'informations sur l'utilisation des sous-titres dans Video Cloud, voir<a href="/media/overview-adding-captions-video.html"> Présentation: Ajout de sous-titres à une vidéo</a>.</aside>
+    </div>  </section><section class="bcls-section">
+    <h2 id="delete">Suppression d'une destination</h2>
+    <p>Pour supprimer une destination, procédez comme suit:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Destinations</strong> in the left navigation. A list of destinations will appear.</li>
-      <li>Click the destination name to delete.</li>
-      <li>The destination details will be displayed. Click <span class="button-blue"><i data-feather="trash-2"></i> Delete</span><strong> </strong>and then click <span class="button-red-text-border">Delete</span> to confirm the deletion.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: The delete button will not appear if there are Auto Sync jobs created that use the destination. You must remove the Auto Sync jobs before deleting the destination.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="reconnect">Reconnecting to a destination</h2>
-    <p>Brightcove Social will display an error message if any destinations have issues.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-error-message.png" /></figure>
-    <p>An error icon (<img alt="" src="/assets/images/s-social-img/node16345-error-icon.png" />) will be displayed next to the destination name. This can happen if the Brightcove permissions are removed from the social media account or when the credentials used when creating the destination are no longer valid. To resolve the issue:</p>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Destinations</strong> dans le menu de navigation de gauche. Une liste de destinations s'affiche.</li>
+      <li>Cliquez sur le nom de la destination à supprimer.</li>
+      <li>Les détails de la destination s'affichent. Cliquez sur<span class="button-blue"> Supprimer,</span><strong> </strong> puis sur<span class="button-red-text-border"> Supprimer</span> pour confirmer la suppression.</li>
+    </ol> <aside class="bcls-aside bcls-aside--information">Remarque: Le bouton Supprimer n'apparaît pas si des tâches de synchronisation automatique créées utilisent la destination. Vous devez supprimer les tâches de synchronisation automatique avant de supprimer la destination.</aside> </section> <section class="bcls-section">
+    <h2 id="reconnect">Se reconnecter à une destination</h2>
+    <p>Brightcove Social affichera un message d'erreur si l'une des destinations rencontre des problèmes.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16345-error-message.png" /></figure>
+    <p>Une icône d'erreur (<img alt="" src="/assets/images/s-social-img/node16345-error-icon.png" />) s'affiche en regard du nom de la destination. Cela peut se produire si les autorisations Brightcove sont supprimées du compte de réseau social ou lorsque les informations d'identification utilisées lors de la création de la destination ne sont plus valides. Pour résoudre le problème:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Click the destination name.</li>
-      <li>Click the <strong>Reconnect</strong> link at the top of the page.</li>
-      <li>You may be prompted to re-authenticate with the social media account.</li>
-    </ol>
-  </section>
-</article>
+      <li>Cliquez sur le nom de la destination.</li>
+      <li>Cliquez sur le<strong> lien</strong> Reconnecter en haut de la page.</li>
+      <li>Vous serez peut-être invité à vous réauthentifier auprès du compte de réseau social.</li>
+    </ol>   </section></article>

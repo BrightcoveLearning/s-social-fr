@@ -1,129 +1,98 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <p>The Brightcove Live to Social Media feature can be used to schedule and then broadcast a live event to YouTube all from within the Social module. To do this, the following tasks will be completed:</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <p>La fonctionnalité Live to Social Media de Brightcove peut être utilisée pour planifier puis diffuser un événement en direct sur YouTube, le tout depuis le module Social. Pour ce faire, les tâches suivantes seront effectuées:</p>
     <ul>
-      <li><a href="#schedule">Schedule a YouTube live event</a></li>
-      <li><a href="#live_event">Create a live event and assign it to scheduled social event</a></li>
-      <li><a href="#preview">Preview and broadcast the live stream</a></li>
-      <li><a href="#end">End the live stream</a></li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information">Note: Your account must be enabled for Brightcove Live before using this feature.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="schedule">Scheduling a YouTube Live event</h2>
-    <p>Scheduling a YouTube live event in advance allows you to publicize the event to your YouTube&nbsp;audience before the event begins. Before a live event can be scheduled, a publishing destination for the YouTube site you are going to stream the event to must be created. For information on creating publishing destinations, see <a href="/social/creating-social-media-publishing-destinations.html">Creating Social Media Publishing Destinations</a>.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: To create a Live stream on YouTube, you need to <a href="https://support.google.com/youtube/answer/9227509?hl=en&ref_topic=9257984"> verify your account</a>&nbsp;then enable Live streaming for your account, this step may take up to 24 hrs to activate.</aside>
-    <p>To schedule an upcoming YouTube live video, follow these steps.</p>
+      <li><a href="#schedule">Planifiez un événement en direct sur YouTube</a></li>
+      <li><a href="#live_event">Créez un événement en direct et attribuez-le à un événement social programmé</a></li>
+      <li><a href="#preview">Prévisualisez et diffusez la diffusion en direct</a></li>
+      <li><a href="#end">Mettre fin à la diffusion en direct</a></li>
+    </ul> <aside class="bcls-aside bcls-aside--information">Remarque: Votre compte doit être activé pour Brightcove Live avant d'utiliser cette fonctionnalité.</aside> </section> <section class="bcls-section">
+    <h2 id="schedule">Programmation d'un événement YouTube Live</h2>
+    <p>La planification d'un événement YouTube Live à l'avance vous permet de faire connaître l'événement à votre public YouTube avant le début de l'événement. Avant qu'un événement en direct puisse être programmé, il faut créer une destination de publication pour le site YouTube sur lequel vous allez diffuser l'événement en streaming. Pour plus d'informations sur la création de destinations de publication, voir<a href="/social/creating-social-media-publishing-destinations.html"> Création de destinations</a> de publication sur les réseaux sociaux</p> <aside class="bcls-aside bcls-aside--information">Remarque: Pour créer une diffusion en direct sur YouTube, vous devez<a href="https://support.google.com/youtube/answer/9227509?hl=en&ref_topic=9257984"> vérifier votre compte</a> puis activer la diffusion en direct pour votre compte. Cette étape peut prendre jusqu'à 24 heures pour être activée.</aside>
+    <p>Pour planifier une prochaine vidéo YouTube en direct, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>From the <strong>Published</strong> page, click <span class="button-blue">Create Live Event</span>.</li>
-      <li>Select the destination the event will be streamed to and then click <span class="button-blue">Continue</span>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-select-dest.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Sur la<strong> page</strong> Publiée, cliquez sur<span class="button-blue"> Créer un événement en direct</span>.</li>
+      <li>Sélectionnez la destination vers laquelle l'événement sera diffusé en continu, puis cliquez sur<span class="button-blue"> Continuer</span>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-select-dest.png" /></figure>
       </li>
-      <li>On the Schedule a Live Event page, optionally, enter a <strong>Title</strong>,&nbsp;<strong>Description</strong> and select a <strong>YouTube Category</strong>. These values will appear in your YouTube post and in the live stream.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-event-info.png" /></figure>
+      <li>Sur la page Programmer un événement en direct, saisissez éventuellement un<strong> titre</strong>, une<strong> description</strong> et sélectionnez une catégorie<strong> YouTube</strong>. Ces valeurs apparaîtront dans votre publication YouTube et dans la diffusion en direct. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-event-info.png" /></figure>
       </li>
-      <li>In the <strong>Schedule</strong> section, use the calendar and clock controls to set the <strong>Event Date &amp; Time</strong> for the event.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-schedule.png" /></figure>
+      <li>Dans la<strong> section</strong> Calendrier, utilisez les commandes du calendrier et de l'horloge pour définir la<strong> date et l'heure</strong> de l'événement. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-schedule.png" /></figure>
       </li>
-      <li>Configure the<strong> </strong>remaining settings as appropriate.
+      <li>Configurez les<strong> </strong> autres paramètres comme il convient.
         <ul>
-          <li><strong>DVR</strong> - If Enabled,  viewers will be able to pause, rewind, and continue during the event. Once a viewer resumes playing, the event will continue from where they paused.</li>
-          <li><strong>Visibility</strong> - This option allows you to select the <strong>Privacy Settings</strong> of your live video</li>
-          <li><strong>License</strong> - This option allows you to select the <strong>License and Rights Ownership</strong> of the video</li>
-        </ul>
-        <figure class="bcls-figure"><img alt="" class="bcls-image--no-border" src="/assets/images/s-social-img/live-yt-settings.png" /></figure>
+          <li><strong>DVR</strong>: s'il est activé, les spectateurs pourront faire une pause, revenir en arrière et continuer pendant l'événement. Une fois qu'un spectateur reprend la lecteur, l'événement se poursuit à partir de l'endroit où il s'est arrêté.</li>
+          <li><strong>Visibilité</strong> - Cette option vous permet de sélectionner les paramètres<strong> de</strong> confidentialité de votre vidéo en direct</li>
+          <li><strong>Licence</strong> - Cette option vous permet de sélectionner la<strong> licence et les droits</strong> de propriété de la vidéo</li>
+        </ul> <figure class="bcls-figure"><img alt="" class="bcls-image--no-border" src="/assets/images/s-social-img/live-yt-settings.png" /></figure>
       </li>
-      <li>Click the <strong>Add Custom Image</strong> link at the top of the page.</li>
-      <li>Click <strong>Select Image</strong> to browse and select an image or drag and drop an image to use. This image will appear in the YouTube post announcing the live event. <a href="https://support.google.com/youtube/answer/72431?hl=en-GB#zippy=,image-size-and-resolution),new-videos,image-size-and-resolution">YouTube recommends</a> that the image:
+      <li>Cliquez sur le<strong> lien</strong> Ajouter une image personnalisée en haut de la page.</li>
+      <li>Cliquez sur<strong> Sélectionner une image</strong> pour parcourir et sélectionner une image ou glissez-déposez une image à utiliser. Cette image apparaîtra dans la publication YouTube annonçant l'événement en direct. <a href="https://support.google.com/youtube/answer/72431?hl=en-GB#zippy=,image-size-and-resolution),new-videos,image-size-and-resolution">YouTube recommande</a> que l'image:
         <ul>
-          <li>Have a resolution of 1,280 x 720 (with a minimum width of 640 pixels)</li>
-          <li>Be a JPG, GIF or PNG</li>
-          <li>Remain under the 2 MB limit</li>
-          <li>Have a 16:9 aspect ratio</li>
+          <li>Avoir une résolution de 1 280 x 720 (avec une largeur minimale de 640 pixels)</li>
+          <li>Que ce soit au format JPG, GIF ou PNG</li>
+          <li>Rester en dessous de la limite de 2 Mo</li>
+          <li>Avoir un rapport hauteur/largeur 16:9</li>
         </ul>
-        <p>The preview image will update to display the new image.</p>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-new-image.png" /></figure>
+        <p>L'image d'aperçu sera mise à jour pour afficher la nouvelle image.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-new-image.png" /></figure>
       </li>
-      <li>Click <span class="button-blue">Ok, Got It</span>.</li>
-      <li>Click <strong>Schedule Event</strong> to schedule the event in YouTube.</li>
-      <li>Click the <strong>View on YouTube</strong> link at the top of the page to view the post on YouTube.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-yt-event-scheduled.png" /></figure>
+      <li>Cliquez sur<span class="button-blue"> OK, j'ai compris</span>.</li>
+      <li>Cliquez sur<strong> Planifier</strong> l'événement pour programmer l'événement sur YouTube.</li>
+      <li>Cliquez sur le<strong> lien</strong> Afficher sur YouTube en haut de la page pour voir la publication sur YouTube. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-yt-event-scheduled.png" /></figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="live_event">Creating a Live event</h2>
-    <p>Before you can start streaming a live event, a live event must be created using the Live module. Live events created in the Live module will be available to broadcast using the Social module.</p>
-    <p>When creating an event in the Live module, keep the following points in mind:</p>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="live_event">Création d'un événement en direct</h2>
+    <p>Avant de pouvoir commencer à diffuser un événement en direct, un événement en direct doit être créé à l'aide du module Live. Les événements en direct créés dans le module Live pourront être diffusés via le module Social.</p>
+    <p>Lorsque vous créez un événement dans le module Live, tenez compte des points suivants:</p>
     <ul>
-      <li>If you create a recurring event, you can create the event ahead of time and activate it when you are ready to start streaming to YouTube.</li>
-      <li>If you create a regular event (non-recurring), the live event must be started within 30 minutes of the event being created. If you are using a regular event, it should be created right before you are ready to go live on YouTube.</li>
+      <li>Si vous créez un événement récurrent, vous pouvez le créer à l'avance et l'activer lorsque vous êtes prêt à commencer à diffuser sur YouTube.</li>
+      <li>Si vous créez un événement régulier (non récurrent), l'événement en direct doit être lancé dans les 30 minutes suivant la création de l'événement. Si vous utilisez un événement régulier, il doit être créé juste avant que vous ne soyez prêt à être diffusé en direct sur YouTube.</li>
     </ul>
-    <p>For detailed information on creating live events using the Live module, see <a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html">Creating and Managing Live Events using the Live Module</a>.</p>
-    <p>To create a new live event, follow these steps.</p>
+    <p>Pour plus d'informations sur la création d'événements en direct à l'aide du module Live, voir<a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html"> Création et gestion d'événements en direct à l'aide du module Live</a>.</p>
+    <p>Pour créer un nouvel événement en direct, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Live</strong> module.</li>
-      <li>Click <span class="button-blue">Create Event</span>. The Create Live Event page will open.</li>
-      <li>Enter the <strong>Event Name</strong> and any required fields.</li>
-      <li>For the <strong>Streaming to Social Media</strong> option, select <strong>Allowed</strong>.</li>
-      <li>Select a <strong>Live Ingest Profile</strong>.</li>
-      <li>Click <strong>Stream Options</strong> and select the <strong>Region</strong> closest to where your encoder is located.</li>
-      <li>If you wish to create a recurring event, in the <strong>Advanced Options</strong> section, select the <strong>Create this as a recurring event using a Static Entry Point (SEP)</strong> option.</li>
-      <li>Click <span class="button-blue">Create Event</span>. The Control Room page will open and display a <strong>Streaming Endpoint (RTMP URL)</strong> and <strong>Stream Name</strong> which we will be used by your encoder.</li>
-      <li>To connect a live event to a scheduled social event using the Live module, click <strong>Connect to Social Media</strong> in the left navigation. Note that the live event can also be assigned using the <a href="#social_assign">Social module</a>.</li>
-      <li>Click on an event and then click <span class="button-blue">Connect</span>. <img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-connect-social-media.png" /> </li>
-      <li>Click the <strong>Control Room</strong> link in the left navigation to return to the control room.</li>
+      <li>Ouvrez le<strong> module</strong> Live.</li>
+      <li>Cliquez sur<span class="button-blue"> Créer un événement</span>. La page Créer un événement en direct s'ouvre.</li>
+      <li>Saisissez le nom de l'<strong>événement</strong> et tous les champs obligatoires.</li>
+      <li>Pour l'<strong>option</strong> Streaming sur les réseaux sociaux, sélectionnez<strong> Autorisé</strong>.</li>
+      <li>Sélectionnez un profil<strong> Live Ingest</strong>.</li>
+      <li>Cliquez sur<strong> Stream Options</strong> et sélectionnez la<strong> région la</strong> plus proche de l'endroit où se trouve votre encodeur.</li>
+      <li>Si vous souhaitez créer un événement récurrent, dans la<strong> section Options</strong> avancées, sélectionnez l'<strong>option</strong> Créer cet événement en tant qu'événement récurrent à l'aide d'un point d'entrée statique (SEP).</li>
+      <li>Cliquez sur<span class="button-blue"> Créer un événement</span>. La page Control Room s'ouvre et affiche un point de terminaison de<strong> streaming (URL RTMP)</strong> et un nom de<strong> flux</strong> que nous utiliserons par votre encodeur.</li>
+      <li>Pour connecter un événement en direct à un événement social programmé à l'aide du module Live, cliquez sur<strong> Se connecter aux réseaux sociaux</strong> dans le volet de navigation de gauche. Notez que l'événement en direct peut également être attribué à l'aide du module<a href="#social_assign"> Social</a>.</li>
+      <li>Cliquez sur un événement, puis sur<span class="button-blue"> Se connecter</span>. <img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-connect-social-media.png" /> </li>
+      <li>Cliquez sur le<strong> lien</strong> Control Room dans le volet de navigation de gauche pour revenir à la Control Room.</li>
     </ol>
-    <p>The <strong>Streaming Endpoint (RTMP URL)</strong> and <strong>Stream Name</strong> values will be used by your encoder. Start the live stream and confirm it appears in the Control Room.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="social_assign">Assigning a live event to a scheduled social event</h2>
-    <p>If the live event wasn't assigned to a scheduled event using the Live module, the live event to use must be selected in the Social module. To assign a live event to a scheduled event using the Social module, follow these steps.</p>
-    <aside class="bcls-aside bcls-aside--information"> These steps are only required if the live event was not assigned in the Live module.</aside>
+    <p>Les<strong> valeurs</strong> Streaming Endpoint (RTMP URL)<strong> et</strong> Stream Name seront utilisées par votre encodeur. Démarrez la diffusion en direct et vérifiez qu'elle apparaît dans la Control Room.</p>  </section><section class="bcls-section">
+    <h2 id="social_assign">Attribuer un événement en direct à un événement social programmé</h2>
+    <p>Si l'événement en direct n'a pas été attribué à un événement programmé à l'aide du module Live, l'événement en direct à utiliser doit être sélectionné dans le module Social. Pour attribuer un événement en direct à un événement programmé à l'aide du module Social, procédez comme suit.</p> <aside class="bcls-aside bcls-aside--information"> Ces étapes ne sont requises que si l'événement en direct n'a pas été attribué dans le module Live.</aside>
     <ol class="bcls-tasklist-restart">
-      <li>Return to the <strong>Social</strong> module and edit the scheduled event.</li>
-      <li>Click the <strong>Connect Video Source</strong> link at the top of the page.</li>
-      <li>Select the live event from the <strong>Select Video Source</strong> dropdown list.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-select-video-source.png" /></figure>
+      <li>Revenez au<strong> module</strong> Social et modifiez l'événement programmé.</li>
+      <li>Cliquez sur le<strong> lien</strong> Connect Video Source en haut de la page.</li>
+      <li>Sélectionnez l'événement en direct dans la liste<strong> déroulante</strong> Sélectionner la source vidéo. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-select-video-source.png" /></figure>
       </li>
-      <li>Click <span class="button-blue">Connect Source</span>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="preview">Previewing and broadcasting the live stream</h2>
-    <p>Before previewing the event in the Social module, the live event should be started and should be visible in the Live module.</p>
-    <p>To preview and broadcast the live stream, follow these steps.</p>
+      <li>Cliquez sur<span class="button-blue"> Connecter la source</span>.</li>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="preview">Prévisualisation et diffusion de la diffusion en direct</h2>
+    <p>Avant de prévisualiser l'événement dans le module Social, l'événement en direct doit être lancé et être visible dans le module Live.</p>
+    <p>Pour prévisualiser et diffuser la diffusion en direct, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>If the event was assigned using the Live module, return to the Social module and edit the scheduled event.</li>
-      <li>Confirm the stream preview appears. This is a preview from the Live module.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-social-module-preview.png" /></figure>
+      <li>Si l'événement a été attribué à l'aide du module Live, revenez au module Social et modifiez l'événement programmé.</li>
+      <li>Vérifiez que l'aperçu du flux s'affiche. Ceci est un aperçu du module Live. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-social-module-preview.png" /></figure>
       </li>
-      <li>Click the <strong>Preview Live Stream </strong>link at the top of the page and then click <strong>Preview</strong>. Click the <strong>Play</strong> button to preview the YouTube live stream. This is the stream that YouTube will broadcast so confirm it is as expected.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-preview-yt-stream.png" /></figure>
+      <li>Cliquez sur le<strong> lien</strong> Aperçu de la diffusion en direct en haut de la page, puis cliquez sur<strong> Aperçu</strong>. Cliquez sur le<strong> bouton</strong> Lire pour prévisualiser la diffusion en direct de YouTube. Il s'agit du flux que YouTube diffusera, alors confirmez que c'est comme prévu. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-preview-yt-stream.png" /></figure>
       </li>
-      <li>To broadcast the live stream to YouTube, click the <strong>Broadcast to Viewers</strong> link and then click <strong>Broadcast Stream</strong>. The preview will update to show the number of viewers.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-broadcast-youtube.png" /></figure>
+      <li>Pour diffuser la diffusion en direct sur YouTube, cliquez sur le<strong> lien</strong> Diffuser aux spectateurs, puis cliquez sur<strong> Diffuser le flux</strong>. L'aperçu sera mis à jour pour afficher le nombre de spectateurs. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-broadcast-youtube.png" /></figure>
       </li>
     </ol>
-    <p>Click the <strong>View on YouTube</strong> link under the player to view the YouTube player.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-live-on-youtube.png" /></figure>
-    <p>As YouTube comments are added by viewers, they can be viewed inside of the Social module by clicking on the <strong>Comment Feed</strong> tab.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-comment-feed.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="end">Ending the live stream</h2>
-    <p>To end the live stream, follow these steps.</p>
+    <p>Cliquez sur le<strong> lien</strong> Afficher sur YouTube situé sous le lecteur pour voir le lecteur YouTube.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-live-on-youtube.png" /></figure>
+    <p>Au fur et à mesure que les commentaires YouTube sont ajoutés par les spectateurs, ils peuvent être consultés dans le module Social en cliquant sur l'<strong>onglet Flux de</strong> commentaires.</p>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-comment-feed.png" /></figure></section><section class="bcls-section">
+    <h2 id="end">Fin de la diffusion en direct</h2>
+    <p>Pour mettre fin à la diffusion en direct, procédez comme suit.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Return to the <strong>Social</strong> module and edit your scheduled event.</li>
-      <li>Click the <strong>End Social Live Event</strong> link at the top of the page and then click <strong>End Live Event</strong>.</li>
-      <li>Return to the Live module to end the event and make sure to stop your encoder.</li>
-      <li>If you were using a recurring event, return to the Live module and deactivate the event.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information"> Make sure the encoder is closed and stopped when the live stream is complete. Leaving a connection open between any encoder and Brightcove, even when no data is being sent, may result in unexpected connection charges.</aside>
-    <p>Completed events will appear in the Social module on the Published page. Clicking the delete icon (<img alt="" src="/assets/images/social/live-yt-delete-icon.png" />) will remove the event from YouTube.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-event-complete.png" /></figure>
-  </section>
-</article>
+      <li>Revenez au<strong> module</strong> Social et modifiez votre événement programmé.</li>
+      <li>Cliquez sur le<strong> lien</strong> Mettre fin à l'événement social en direct en haut de la page, puis cliquez sur Mettre<strong> fin à l'événement en direct</strong>.</li>
+      <li>Revenez au module Live pour mettre fin à l'événement et assurez-vous d'arrêter votre encodeur.</li>
+      <li>Si vous utilisiez un événement récurrent, revenez au module Live et désactivez l'événement.</li>
+    </ol> <aside class="bcls-aside bcls-aside--information"> Assurez-vous que l'encodeur est fermé et arrêté lorsque la diffusion en direct est terminée. Le fait de laisser une connexion ouverte entre n'importe quel encodeur et Brightcove, même lorsqu'aucune donnée n'est envoyée, peut entraîner des frais de connexion imprévus.</aside>
+    <p>Les événements terminés apparaîtront dans le module Social de la page Publiée. Cliquez sur l'icône Supprimer (<img alt="" src="/assets/images/social/live-yt-delete-icon.png" />) pour supprimer l'événement de YouTube.</p>    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/live-yt-event-complete.png" /></figure></section></article>

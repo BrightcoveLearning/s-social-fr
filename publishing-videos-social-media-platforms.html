@@ -1,41 +1,29 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section"> {% if site.product_short == "Video Cloud" %}
-    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5018055033001">&nbsp;</div>
-    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> 
-    {% endif %}
-    <p>Brightcove Social allows you to easily publish videos in your {{ site.product_short }} account out to YouTube, Facebook and Twitter. Before you can publish videos, you must create publishing destinations for the social accounts you wish to publish videos to. For information on creating publishing destinations, see <a href="/social/creating-social-media-publishing-destinations.html">Creating Social Media Publishing Destinations</a>.</p>
-    <p>Note that using Auto Sync and manually publishing videos using the Social module are independent operations. Auto Sync is not aware of which videos have been manually published using the Social module. If a video is tagged in a way that causes Auto Sync to publish it to one of your social destinations, it will do that regardless if that video has previously been manually published using the Social module.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="rules">Determining the rendition to publish</h2>
-    <p>In order to distribute videos to a social platform, videos should have at least one MP4 rendition or a video master available. Videos uploaded using one of the Brightcove provided, standard ingest profiles will save a master by default. For more information on archiving masters, see the <a href="https://apis.support.brightcove.com/ingest-profiles/guides/archiving-masters.html">Archiving Masters</a> document.</p>
-    <p>When distributing videos to a social platform, Brightcove Social will attempt to distribute the highest quality rendition that meets the rules applied by the individual social platform. If the rendition sent to the social platform is rejected, there is no attempt to send another rendition.</p>
-    <p>The rules to rank videos are as follows:</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section"> {% if site.product_short == Video Cloud-fr/ %}
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5018055033001">&nbsp;</div> <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> {% endif %}
+    <p>Brightcove Social vous permet de publier facilement des vidéos de votre compte {{site.product_short}} sur YouTube, Facebook et Twitter. Avant de pouvoir publier des vidéos, vous devez créer des destinations de publication pour les comptes sociaux sur lesquels vous souhaitez publier des vidéos. Pour plus d'informations sur la création de destinations de publication, voir<a href="/social/creating-social-media-publishing-destinations.html"> Création de destinations</a> de publication sur les réseaux sociaux</p>
+    <p>Notez que l'utilisation de la synchronisation automatique et la publication manuelle de vidéos à l'aide du module Social sont des opérations indépendantes. Auto Sync ne sait pas quelles vidéos ont été publiées manuellement à l'aide du module Social. Si une vidéo est balisée de telle sorte qu'Auto Sync la publie sur l'une de vos destinations sociales, elle le fera même si cette vidéo a déjà été publiée manuellement à l'aide du module Social.</p>  </section><section class="bcls-section">
+    <h2 id="rules">Déterminer le format associé à publier</h2>
+    <p>Afin de distribuer des vidéos sur une plateforme sociale, les vidéos doivent disposer d'au moins un rendu MP4 ou d'un master vidéo. Les vidéos téléchargées à l'aide de l'un des profils d'acquisition standard fournis par Brightcove enregistreront un master par défaut. Pour plus d'informations sur les bases d'archivage, consultez le<a href="https://apis.support.brightcove.com/ingest-profiles/guides/archiving-masters.html"> document Masters</a> d'archivage.</p>
+    <p>Lors de la distribution de vidéos sur une plateforme sociale, Brightcove Social tente de diffuser un rendu de la plus haute qualité qui respecte les règles appliquées par chaque plateforme sociale. Si le format associé envoyé à la plateforme sociale est rejeté, il n'y a aucune tentative d'envoi d'un autre format associé.</p>
+    <p>Les règles de classement des vidéos sont les suivantes:</p>
     <ul>
-      <li>MP4 assets are better than any other video container. No attempt is made to order the other types of video containers.</li>
-      <li>If the video containers are of equivalent quality, the video with the higher encoding rate is considered better.</li>
-      <li>If the encoding rates are of equivalent quality, the video with the higher resolution is considered better. Note that because not all renditions of a video necessarily have the same aspect ratio, we compare videos based on a computed 'compound' proxy for the resolution by using the product of the height and the width of the respective videos.</li>
+      <li>Les ressources MP4 sont meilleures que tout autre conteneur vidéo. Aucune tentative n'est faite pour commander les autres types de conteneurs vidéo.</li>
+      <li>Si les conteneurs vidéo sont de qualité équivalente, la vidéo avec le taux d'encodage le plus élevé est considérée comme meilleure.</li>
+      <li>Si les taux d'encodage sont de qualité équivalente, la vidéo avec la résolution la plus élevée est considérée comme meilleure. Notez que comme tous les rendus d'une vidéo n'ont pas nécessairement le même format d'image, nous comparons les vidéos sur la base d'un proxy composé-fr/ calculé pour la résolution en utilisant le produit de la hauteur et de la largeur des vidéos respectives.</li>
     </ul>
-    <p>Note that if one of the video assets is lacking any of the above information necessary to make the comparison, that video is considered 'worse' than the video that has all of the necessary information.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="publish">Publishing videos to social media</h2>
-    <p>Once you have <a href="/social/creating-social-media-publishing-destinations.html">created publishing destinations</a>, follow these steps to publish videos to social media.</p>
+    <p>Notez que si l'une des ressources vidéo ne contient aucune des informations ci-dessus nécessaires pour effectuer la comparaison, cette vidéo est considérée comme pire-fr/ que la vidéo qui contient toutes les informations nécessaires.</p>  </section><section class="bcls-section">
+    <h2 id="publish">Publier des vidéos sur les réseaux sociaux</h2>
+    <p>Une fois que vous avez<a href="/social/creating-social-media-publishing-destinations.html"> créé des destinations de publication</a>, suivez ces étapes pour publier des vidéos sur les réseaux sociaux.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Videos</strong> in the left navigation. A list of videos in your {{ site.product_short }} account will display. Videos that haven't been published to a social media account will display a <strong>Status</strong> of <strong>Never Published</strong>. Videos that have been published will display <strong>Check Status</strong>. Click the link to see the publishing status of the video on the social media destinations.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-video-list.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Vidéos</strong> dans le menu de navigation de gauche. Une liste des vidéos de votre compte {{site.product_short}} s'affichera. Les vidéos qui n'ont pas été publiées sur un compte de réseau social afficheront le<strong> statut </strong><strong>Jamais publié</strong>. Les vidéos qui ont été publiées afficheront<strong> Vérifier le statut</strong>. Cliquez sur le lien pour voir l'état de publication de la vidéo sur les réseaux sociaux. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-video-list.png" /></figure>
       </li>
-      <li>Click on a video to publish and then click <span class="button-blue">Publish</span>.
-        <aside class="bcls-aside bcls-aside--information">Note: Videos that are DRM enabled will display a lock icon in the video thumbnail. DRM enabled videos that were ingested using a Dynamic Delivery ingest profile can be published, however, they can't be downloaded or have clips created. These buttons will be disabled when a DRM enabled video is selected.</aside>
+      <li>Cliquez sur une vidéo à publier, puis cliquez sur<span class="button-blue"> Publier</span>. <aside class="bcls-aside bcls-aside--information">Remarque: Les vidéos qui sont compatibles DRM affichent une icône en forme de cadenas dans la miniature de la vidéo. Les vidéos prenant en charge les DRM qui ont été ingérées à l'aide d'un profil d'acquisition Dynamic Delivery peuvent être publiées, mais elles ne peuvent pas être téléchargées ni créer de clips. Ces boutons seront désactivés lorsqu'une vidéo compatible DRM est sélectionnée.</aside>
       </li>
-      <li>Select the destination(s) to publish the video to. You can also click <strong>Add New Destination</strong> to <a href="/social/creating-social-media-publishing-destinations.html">create a new destination</a>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-publish-preview.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: Destinations with an error will display an error icon (<img alt="" src="/assets/images/s-social-img/node16344-error-icon.png" />) next to the name. Select the destination and then click <strong>Reconnect</strong> to resolve the issue.</aside>
+      <li>Sélectionnez la ou les destinations sur lesquelles publier la vidéo. Vous pouvez également cliquer sur<strong> Ajouter une nouvelle destination</strong> pour<a href="/social/creating-social-media-publishing-destinations.html"> créer une nouvelle destination</a>. <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-publish-preview.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: Les destinations présentant une erreur afficheront une icône d'erreur (<img alt="" src="/assets/images/s-social-img/node16344-error-icon.png" />) en regard du nom. Sélectionnez la destination, puis cliquez sur<strong> Reconnecter</strong> pour résoudre le problème.</aside>
       </li>
-      <li>Review the video metadata properties for each destination. The video properties will differ depending on the social media platform you are publishing to. For more information, see the sections for each social media platform:
+      <li>Passez en revue les propriétés des métadonnées vidéo pour chaque destination. Les propriétés de la vidéo varient en fonction de la plateforme de médias sociaux sur laquelle vous publiez. Pour plus d'informations, consultez les sections relatives à chaque plateforme de médias sociaux:
         <ul>
           <li><a href="#youtube">YouTube</a></li>
           <li><a href="#facebook">Facebook</a></li>
@@ -43,331 +31,260 @@
           <li><a href="#linkedin">LinkedIn</a></li>
         </ul>
       </li>
-      <li>Click the <span class="button-blue">Publish to Destination</span> button to publish the videos. Monitor the distribution status by clicking <strong>Published</strong> in the left navigation. For information on viewing the status of publishing streams, see <a href="/social/viewing-videos-published-social-media.html">Viewing Your Social Media Publishing Streams</a>.</li>
+      <li>Cliquez sur le<span class="button-blue"> bouton</span> Publier vers la destination pour publier les vidéos. Surveillez l'état de la distribution en cliquant sur<strong> Publié</strong> dans le menu de navigation de gauche. Pour plus d'informations sur l'affichage de l'état des flux de publication, voir<a href="/social/viewing-videos-published-social-media.html"> Affichage de vos flux de publication sur les réseaux sociaux</a>.</li>
     </ol>
-    <p>Publishing videos using the Publish button is a one-time publishing operation. Videos published using this method will not receive any metadata updates from the Social module after the initial upload.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="youtube">Setting video properties for YouTube</h2>
-    <p>By default, videos that are up to 15 minutes long can be uploaded to YouTube. For information on uploading longer videos, see <a href="/general/enabling-longer-videos-youtube.html">Enabling Longer Videos In YouTube</a>. After a video is published to YouTube, any updates to the source video in Studio will not update on the YouTube side.</p>
-    <p>When choosing a YouTube destination, the following video properties can be configured:</p>
+    <p>La publication de vidéos à l'aide du bouton Publier est une opération de publication unique. Les vidéos publiées à l'aide de cette méthode ne recevront aucune mise à jour des métadonnées du module Social après le chargement initial.</p>  </section><section class="bcls-section">
+    <h2 id="youtube">Définition des propriétés vidéo pour YouTube</h2>
+    <p>Par défaut, les vidéos d'une durée maximale de 15 minutes peuvent être téléchargées sur YouTube. Pour plus d'informations sur le chargement de vidéos plus longues, consultez<a href="/general/enabling-longer-videos-youtube.html"> Activation de vidéos plus longues sur YouTube</a>. Après la publication d'une vidéo sur YouTube, les mises à jour de la vidéo source dans Studio ne seront pas mises à jour du côté YouTube.</p>
+    <p>Lorsque vous choisissez une destination YouTube, les propriétés vidéo suivantes peuvent être configurées:</p>
     <ul>
-      <li><a href="#ytthumb">Thumbnail Source</a></li>
-      <li><a href="#ytpostinfo">Post Info</a></li>
-      <li><a href="#ytschedule">Schedule</a></li>
-      <li><a href="#ytcaptions">Captions</a></li>
-      <li><a href="#ytvisibility">Visibility</a></li>
-      <li><a href="#ytlicense">License</a></li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information"> Notes:
+      <li><a href="#ytthumb">Source de la vignette</a></li>
+      <li><a href="#ytpostinfo">Infos sur le poste</a></li>
+      <li><a href="#ytschedule">Horaire</a></li>
+      <li><a href="#ytcaptions">Légendes</a></li>
+      <li><a href="#ytvisibility">Visibilité</a></li>
+      <li><a href="#ytlicense">Licence</a></li>
+    </ul> <aside class="bcls-aside bcls-aside--information"> Remarques:
       <ul>
-        <li><a href="creating-social-media-publishing-destinations.html#youtube_defaults">Default video properties for YouTube</a> can be set by editing the destination.</li>
-        <li>The YouTube API doesn't support disabling comments via their current API so there is no option to disable comments in the Social UI.</li>
-        <li>Avoid special characters in the name and description of the video: using "&lt;" or "&gt;" are known to cause failure, but other special characters may cause problems as well.</li>
-      </ul>
-    </aside>
+        <li><a href="creating-social-media-publishing-destinations.html#youtube_defaults">Les propriétés vidéo par défaut de YouTube</a> peuvent être définies en modifiant la destination.</li>
+        <li>L'API YouTube ne prend pas en charge la désactivation des commentaires via son API actuelle. Il n'y a donc aucune option pour désactiver les commentaires dans l'interface utilisateur de Social.</li>
+        <li>Évitez les caractères spéciaux dans le nom et la description de la vidéo: l'utilisation de «&lt;-fr/ ou &gt;-fr/ est connue pour provoquer des échecs, mais d'autres caractères spéciaux peuvent également causer des problèmes.</li>
+      </ul> </aside>
     <div id="ytthumb" class="BCL-subsection">
-      <h3>Configuring the thumbnail source</h3>
-      <p>When posting to YouTube, the video thumbnail source can be set to:</p>
+      <h3>Configuration de la source des vignettes</h3>
+      <p>Lors de la publication sur YouTube, la source des vignettes vidéo peut être définie comme suit:</p>
       <ul>
-        <li><strong>YouTube</strong> - YouTube will select a thumbnail</li>
-        <li><strong>Video Cloud</strong> - Use the Video Cloud thumbnail image as the YouTube thumbnail</li>
-        <li><strong>Custom Image</strong> - Browse and select a custom thumbnail image to use</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-thumb.png" /></figure>
-      <p>Checking <strong>Use for all destinations</strong> will use this thumbnail for all destinations currently being published to.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: Before you can post custom video thumbnails from Brightcove Social to YouTube, your YouTube account must be verified. For information on verifying your YouTube account, see <a href="https://www.youtube.com/verify">this link</a>.</aside>
-      <aside class="bcls-aside bcls-aside--information">Note: Updates to thumbnail images in Studio will not update the thumbnail image on the YouTube side.</aside>
+        <li><strong>YouTube</strong> - YouTube sélectionnera une miniature</li>
+        <li><strong>Video Cloud</strong>: utilisez l'image miniature de Video Cloud comme miniature YouTube</li>
+        <li><strong>Image personnalisée</strong>: parcourez et sélectionnez une vignette personnalisée à utiliser</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-thumb.png" /></figure>
+      <p>Si vous cochez<strong> Utiliser pour toutes les destinations, cette miniature</strong> sera utilisée pour toutes les destinations en cours de publication.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Avant de pouvoir publier des miniatures vidéo personnalisées de Brightcove Social sur YouTube, votre compte YouTube doit être vérifié. Pour plus d'informations sur la vérification de votre compte YouTube, consultez<a href="https://www.youtube.com/verify"> ce lien</a>.</aside> <aside class="bcls-aside bcls-aside--information">Remarque: Les mises à jour des images miniatures dans Studio ne mettront pas à jour l'image miniature du côté YouTube.</aside>
     </div>
     <div id="ytpostinfo" class="BCL-subsection">
-      <h3>Configuring the Post Info properties</h3>
-      <p>Click on the <strong>Post Info</strong> link. The following YouTube video properties can be set:</p>
+      <h3>Configuration des propriétés Post Info</h3>
+      <p>Cliquez sur le<strong> lien</strong> Post Info. Les propriétés vidéo YouTube suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Title</strong> - Title of the video (defaults to {{ site.product_short }} title). YouTube supports up to 100 characters.</li>
-        <li><strong>Description</strong> - Description of the video (defaults to {{ site.product_short }} short description). YouTube supports up to 5000 characters.</li>
-        <li><strong>YouTube Category</strong> - Content category for the video</li>
-        <li><strong>Tags</strong> - Tags for the video (defaults to {{ site.product_short }} tags). There's no specific tag count limit; you can use max 30 characters per tag, and the text field accepts up to 500 characters.</li>
-      </ul>
-      <aside class="bcls-aside bcls-aside--information">A few things to note about the character limit for tags:
+        <li><strong>Titre</strong>: titre de la vidéo ({{site.product_short}} titre par défaut). YouTube prend en charge jusqu'à 100 caractères.</li>
+        <li><strong>Description</strong>: description de la vidéo (par défaut, {{site.product_short}} courte description). YouTube prend en charge jusqu'à 5 000 caractères.</li>
+        <li><strong>Catégorie YouTube</strong>: catégorie de contenu de la vidéo</li>
+        <li><strong>Tags</strong>: balises de la vidéo ({{site.product_short}} balises par défaut). Il n'y a pas de limite de nombre de balises spécifique&nbsp;; vous pouvez utiliser un maximum de 30 caractères par balise et le champ de texte accepte jusqu'à 500 caractères.</li>
+      </ul> <aside class="bcls-aside bcls-aside--information">Quelques points à noter concernant la limite de caractères pour les balises:
         <ol>
-          <li>The property value is a list, and commas between items in the list count toward the 500 character limit.</li>
-          <li>If a tag contains a space, the API server handles the tag value as though it were wrapped in quotation marks, and the quotation marks count toward the character limit. So if you have a tag such as <code translate="No">late news</code>, this is treated as <code translate="No">"late news"</code> and counts as 11 characters (including the quotation marks).</li>
-          <li>If you exceed the character limit on tags, no error will be reported in the Social module. To verify that videos were shared successfully, click <strong>Published</strong> in the left navigation, check on YouTube or get the status using the <a href="https://apis.support.brightcove.com/social/getting-started/overview-social-api.html">Social API</a>.</li>
-        </ol>
-      </aside>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-post-info.png" /></figure>
+          <li>La valeur de la propriété est une liste, et les virgules entre les éléments de la liste sont prises en compte dans la limite de 500 caractères.</li>
+          <li>Si une balise contient un espace, le serveur d'API gère la valeur de la balise comme si elle était placée entre guillemets, et les guillemets sont pris en compte dans la limite de caractères. Ainsi, si vous avez un tag tel que «<code translate="No">&nbsp;late news-fr/</code>, celui-ci est traité comme<code translate="No"> late news-fr/</code> et compte pour 11 caractères (guillemets inclus).</li>
+          <li>Si vous dépassez la limite de caractères sur les balises, aucune erreur ne sera signalée dans le module Social. Pour vérifier que les vidéos ont bien été partagées, cliquez sur<strong> Publié</strong> dans le menu de navigation de gauche, consultez YouTube ou obtenez le statut à l'aide de l'API<a href="https://apis.support.brightcove.com/social/getting-started/overview-social-api.html"> sociale</a>.</li>
+        </ol>  </aside><figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-post-info.png" /></figure>
     </div>
     <div id="ytschedule" class="BCL-subsection">
-      <h3>Configuring the Schedule properties</h3>
-      <p>Click on the <strong>Schedule</strong> link and select a schedule setting:</p>
+      <h3>Configuration des propriétés de planification</h3>
+      <p>Cliquez sur le<strong> lien</strong> Planifier et sélectionnez un paramètre de planification:</p>
       <ul>
-        <li><strong>Publish Immediately</strong> - To publish the video immediately</li>
-        <li><strong>Schedule Publish Date</strong> - To choose a publish date and time for the video.</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-schedule-info.png" /></figure>
-      <aside class="bcls-aside bcls-aside--information">Note: The schedule date and time are sent to YouTube only once, when the video is sent to YouTube. If the schedule date and/or time needs to be changed, they must be changed in YouTube. The Social module will not update any schedule dates or times after the initial sync to YouTube.</aside>
-      <aside class="bcls-aside bcls-aside--information">Note: To have the <a href="#ytvisibility">video visibility</a> set to <strong>Unlisted</strong> or <strong>Private</strong>, set the <strong>Schedule</strong> option to <strong>Publish Immediately</strong> and set the <strong>Visibility</strong> option to <strong>Unlisted</strong> or <strong>Private</strong>.</aside>
+        <li><strong>Publier immédiatement</strong>: pour publier la vidéo immédiatement</li>
+        <li><strong>Date de publication</strong> programmée: permet de choisir la date et l'heure de publication de la vidéo.</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-schedule-info.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: La date et l'heure programmées ne sont envoyées à YouTube qu'une seule fois, lorsque la vidéo est envoyée à YouTube. Si la date et/ou l'heure du programme doivent être modifiées, elles doivent être modifiées dans YouTube. Le module Social ne mettra pas à jour les dates ou heures programmées après la synchronisation initiale avec YouTube.</aside> <aside class="bcls-aside bcls-aside--information">Remarque: Pour que la visibilité de la<a href="#ytvisibility"> vidéo soit</a> définie sur<strong> Non répertoriée</strong> ou<strong> Privée</strong>, définissez l'<strong>option</strong> Planifier sur <strong>Publiez immédiatement</strong> et définissez l'<strong>option</strong> Visibilité sur<strong> Non répertorié</strong> ou<strong> Privé</strong>.</aside>
     </div>
     <div id="ytcaptions" class="BCL-subsection">
-      <h3>Configuring the Captions properties</h3>
-      <p>Click on the <strong>Captions</strong> link. Select the source for the captions:</p>
+      <h3>Configuration des propriétés Captions</h3>
+      <p>Cliquez sur le<strong> lien</strong> Légendes. Sélectionnez la source des légendes:</p>
       <ul>
-        <li><strong>Use Video Cloud captions</strong> - Uses the captions associated with the video. For information on working with captions, see <a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.</li>
-        <li><strong>No captions</strong> - No captions will be sent to YouTube</li>
-        <li><strong>Upload captions</strong> - Click <strong>Upload captions</strong> and browse and select a captions file. The captions file should be in .VTT or .SRT format. Select the caption <strong>Language</strong>, add a <strong>Label</strong> and select the <strong>Format</strong>. Click <strong>Add Caption File</strong>.</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-captions-info.png" /></figure>
-    </div>
-    <aside class="bcls-aside bcls-aside--information">Videos with Closed Captions can be clipped via Social, but the resulting clipped video will not have captions. You will need to upload new captions to the clipped video, and Social will use those when publishing.</aside>
+        <li><strong>Utiliser les sous-titres de Video Cloud</strong>: utilise les sous-titres associés à la vidéo. Pour plus d'informations sur l'utilisation des légendes, voir<a href="/media/overview-adding-captions-video.html"> Vue d'ensemble: Ajout de sous-titres à une vidéo</a>.</li>
+        <li><strong>Aucune légende</strong> - Aucune légende ne sera envoyée à YouTube</li>
+        <li><strong>Télécharger des sous-titres</strong>: cliquez sur<strong> Télécharger des sous-titres,</strong> puis parcourez et sélectionnez un fichier de sous-titres. Le fichier de sous-titres doit être au format .VTT ou .SRT. Sélectionnez la<strong> langue de la légende</strong>, ajoutez une<strong> étiquette</strong> et sélectionnez le<strong> format</strong>. Cliquez sur<strong> Ajouter un fichier de sous-titres</strong>.</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-captions-info.png" /></figure>
+    </div> <aside class="bcls-aside bcls-aside--information">Les vidéos avec sous-titres codés peuvent être découpées via Social, mais la vidéo découpée qui en résulte ne comportera pas de sous-titres. Vous devrez télécharger de nouvelles légendes dans la vidéo coupée, et Social les utilisera lors de la publication.</aside>
     <div id="ytvisibility" class="BCL-subsection">
-      <h3>Configuring the Visibility properties</h3>
-      <p>Click on the <strong>Visibility</strong> link and select a Privacy setting for the video. The following Privacy settings are available:</p>
+      <h3>Configuration des propriétés de visibilité</h3>
+      <p>Cliquez sur le<strong> lien</strong> Visibilité et sélectionnez un paramètre de confidentialité pour la vidéo. Les paramètres de confidentialité suivants sont disponibles:</p>
       <ul>
-        <li><strong>Public</strong> - Anyone can view the video</li>
-        <li><strong>Unlisted</strong> - Anyone who has the link to the video can view it</li>
-        <li><strong>Private</strong> - Video can only be seen by you and the users you select</li>
-      </ul>
-      <aside class="bcls-aside bcls-aside--information">Note: With YouTube destinations, it is possible to dynamically assign the privacy setting using a custom field associated with the video. For information, see <a href="/social/setting-privacy-status-video.html">Setting the Privacy Status for a Video</a>.</aside>
-      <p>There is also a setting to <strong>Notify subscribers when video is posted to YouTube</strong>. If checked, your subscribers will see your videos in their Subscriptions feed and may receive a notification that the video was uploaded.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-privacy-info.png" /></figure>
-      <aside class="bcls-aside bcls-aside--information">Note: For more information on the YouTube Privacy settings, see the <a href="https://support.google.com/youtube/answer/157177">YouTube documentation</a>.</aside>
+        <li><strong>Public</strong> - Tout le monde peut visionner la vidéo</li>
+        <li><strong>Non listé</strong> - Toute personne disposant du lien vers la vidéo peut la visionner</li>
+        <li><strong>Privé</strong> - La vidéo ne peut être vue que par vous et les utilisateurs que vous sélectionnez</li>
+      </ul> <aside class="bcls-aside bcls-aside--information">Remarque: Avec les destinations YouTube, il est possible d'attribuer dynamiquement le paramètre de confidentialité à l'aide d'un champ personnalisé associé à la vidéo. Pour plus d'informations, consultez la section<a href="/social/setting-privacy-status-video.html"> Définition de l'état de confidentialité d'une vidéo</a>.</aside>
+      <p>Il existe également un paramètre permettant d'<strong>avertir les abonnés lorsque la vidéo est publiée sur YouTube</strong>. Si cette case est cochée, vos abonnés verront vos vidéos dans leur flux Abonnements et peuvent recevoir une notification les informant que la vidéo a été mise en ligne.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-privacy-info.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: Pour plus d'informations sur les paramètres de confidentialité de YouTube, consultez la documentation<a href="https://support.google.com/youtube/answer/157177"> YouTube</a>.</aside>
     </div>
     <div id="ytlicense" class="BCL-subsection">
-      <h3>Configuring the License properties</h3>
-      <p>Click on the <strong>License</strong> link and select a License and Rights Ownership setting for the video. The following settings are available:</p>
+      <h3>Configuration des propriétés de licence</h3>
+      <p>Cliquez sur le<strong> lien</strong> Licence et sélectionnez un paramètre Licence et droits de propriété pour la vidéo. Les paramètres suivants sont disponibles:</p>
       <ul>
-        <li>Standard YouTube License</li>
+        <li>Licence YouTube standard</li>
         <li>Creative Commons - Attribution</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-license-info.png" /></figure>
-      <aside class="bcls-aside bcls-aside--information">Note: For more information on YouTube License and Rights Ownership, see the <a href="https://support.google.com/youtube/answer/2797468">YouTube documentation</a>.</aside>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="facebook">Setting video properties for Facebook</h2>
-    <p>When choosing a Facebook destination, the following video properties can be configured:</p>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-yt-license-info.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: Pour plus d'informations sur la licence YouTube et la propriété des droits, consultez la documentation<a href="https://support.google.com/youtube/answer/2797468"> YouTube</a>.</aside>
+    </div>  </section><section class="bcls-section">
+    <h2 id="facebook">Définition des propriétés vidéo pour Facebook</h2>
+    <p>Lorsque vous choisissez une destination Facebook, les propriétés vidéo suivantes peuvent être configurées:</p>
     <ul>
-      <li><a href="#fbthumb">Thumbnail</a></li>
-      <li><a href="#fbpostinfo">Post Info</a></li>
-      <li><a href="#fbschedule">Schedule</a></li>
-      <li><a href="#fbcaptions">Captions</a></li>
-      <li><a href="#fbtarget">Target</a></li>
-      <li><a href="#fbmonetize">Monetize</a></li>
-      <li><a href="#fbrights">Rights</a></li>
+      <li><a href="#fbthumb">Miniature</a></li>
+      <li><a href="#fbpostinfo">Infos sur le poste</a></li>
+      <li><a href="#fbschedule">Horaire</a></li>
+      <li><a href="#fbcaptions">Légendes</a></li>
+      <li><a href="#fbtarget">Cible</a></li>
+      <li><a href="#fbmonetize">Monétisez</a></li>
+      <li><a href="#fbrights">Droits</a></li>
       <li><a href="#fbdistribution">Distribution</a></li>
-      <li><a href="#fbtracking">Tracking</a></li>
+      <li><a href="#fbtracking">Suivi</a></li>
     </ul>
-    <p>After a video is published to Facebook, any updates to the source video in Studio will not update on the Facebook side.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: <a href="creating-social-media-publishing-destinations.html#facebook_defaults">Default video properties for Facebook</a> can be set by editing the destination.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: Facebook does not allow .gif images. If your video is using a .gif for the thumbnail image, the publish to Facebook will fail.</aside>
+    <p>Après la publication d'une vidéo sur Facebook, les mises à jour de la vidéo source dans Studio ne seront pas mises à jour du côté Facebook.</p> <aside class="bcls-aside bcls-aside--information">Remarque: <a href="creating-social-media-publishing-destinations.html#facebook_defaults">Les propriétés vidéo par défaut de Facebook</a> peuvent être définies en modifiant la destination.</aside> <aside class="bcls-aside bcls-aside--information">Remarque: Facebook n'autorise pas les images .gif. Si votre vidéo utilise un .gif pour l'image miniature, la publication sur Facebook échouera.</aside>
     <div id="fbthumb" class="BCL-subsection">
-      <h3>Configuring the thumbnail source</h3>
-      <p>When posting to Facebook, the video thumbnail source can be set to:</p>
+      <h3>Configuration de la source des vignettes</h3>
+      <p>Lors de la publication sur Facebook, la source des vignettes vidéo peut être définie comme suit:</p>
       <ul>
-        <li><strong>Facebook</strong> - Facebook will select a thumbnail</li>
-        <li><strong>Video Cloud</strong> - Use the Video Cloud thumbnail image as the Facebook thumbnail</li>
-        <li><strong>Custom Image</strong> - Browse and select a custom thumbnail image to use</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-thumb.png" /></figure>
-      <p>Checking <strong>Use for all destinations</strong> will use this thumbnail for all destinations currently being published to.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: Updates to thumbnail images in Studio will not update the thumbnail image on the Facebook side.</aside>
+        <li><strong>Facebook</strong> - Facebook sélectionnera une vignette</li>
+        <li><strong>Video Cloud</strong> - Utilisez l'image miniature de Video Cloud comme vignette Facebook</li>
+        <li><strong>Image personnalisée</strong>: parcourez et sélectionnez une vignette personnalisée à utiliser</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-thumb.png" /></figure>
+      <p>Si vous cochez<strong> Utiliser pour toutes les destinations, cette miniature</strong> sera utilisée pour toutes les destinations en cours de publication.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Les mises à jour des images miniatures dans Studio ne mettront pas à jour l'image miniature du côté Facebook.</aside>
     </div>
     <div id="fbpostinfo" class="BCL-subsection">
-      <h3>Configuring the Post Info properties</h3>
-      <p>Click on the <strong>Post Info</strong> link. The following Facebook video properties can be set:</p>
+      <h3>Configuration des propriétés Post Info</h3>
+      <p>Cliquez sur le<strong> lien</strong> Post Info. Les propriétés vidéo Facebook suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Title</strong> - Title of the video (defaults to {{ site.product_short }} title). Facebook will truncate after 65 characters</li>
-        <li><strong>Status Message</strong> - Description of the video (defaults to {{ site.product_short }} short description). Note that Facebook has disabled their search API, therefore, it's not possible for us to auto complete a Facebook mention.</li>
-        <li><strong>Tags</strong> - Select a Facebook tag from the list. Note that Facebook manages the tags. The Social module must comply with them so Social checks the list when typing into the <strong>Tags</strong> field.</li>
-        <li><strong>Facebook Category</strong> - Content category for the video</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-post-info.png" /></figure>
+        <li><strong>Titre</strong>: titre de la vidéo ({{site.product_short}} titre par défaut). Facebook sera tronqué après 65 caractères</li>
+        <li><strong>Message d'état</strong>: description de la vidéo (par défaut, {site.product_short}} courte description). Notez que Facebook a désactivé son API de recherche, il ne nous est donc pas possible de compléter automatiquement une mention Facebook.</li>
+        <li><strong>Tags</strong> - Sélectionnez un tag Facebook dans la liste. Notez que Facebook gère les tags. Le module Social doit s'y conformer afin que Social vérifie la liste lors de la saisie dans le<strong> champ</strong> Tags.</li>
+        <li><strong>Catégorie Facebook</strong> - Catégorie de contenu de la vidéo</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-post-info.png" /></figure>
     </div>
     <div id="fbschedule" class="BCL-subsection">
-      <h3>Configuring the Schedule properties</h3>
-      <p>Click on the <strong>Schedule</strong> link. Select <strong>Publish Immediately</strong> to publish the video immediately or select <strong>Schedule Publish Date</strong> and select a <strong>Publish Date &amp; Time</strong>. You can also set that <strong>Posts Never Expire</strong> or select <strong>Schedule Expiration </strong> and then select a <strong>Expiration Date and Time</strong>. A<strong> Time Zone</strong> can also be selected.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-schedule-info.png" /></figure>
-      <aside class="bcls-aside bcls-aside--information">Note: The schedule date and time are sent to Facebook only once, when the video is sent to Facebook. If the schedule date and/or time needs to be changed, they must be changed in Facebook. The Social module will not update any schedule dates or times after the initial sync to Facebook.</aside>
+      <h3>Configuration des propriétés de planification</h3>
+      <p>Cliquez sur le<strong> lien</strong> Planifier. Sélectionnez<strong> Publier immédiatement</strong> pour publier la vidéo immédiatement ou sélectionnez<strong> Programmer la date de publication</strong> et sélectionnez une date et une heure de<strong> publication</strong>. Vous pouvez également définir que<strong> les publications n'expirent jamais</strong> ou sélectionner<strong> Schedule Expiration,</strong> puis sélectionner une date et une heure<strong> d'expiration</strong>. Un<strong> fuseau horaire</strong> peut également être sélectionné.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-schedule-info.png" /></figure> <aside class="bcls-aside bcls-aside--information">Remarque: La date et l'heure programmées ne sont envoyées à Facebook qu'une seule fois, lorsque la vidéo est envoyée à Facebook. Si la date et/ou l'heure du programme doivent être modifiées, elles doivent être modifiées dans Facebook. Le module Social ne mettra pas à jour les dates ou heures programmées après la synchronisation initiale avec Facebook.</aside>
     </div>
     <div id="fbcaptions" class="BCL-subsection">
-      <h3>Configuring the Captions properties</h3>
-      <p>Click on the <strong>Captions</strong> link. Select the source for the captions:</p>
+      <h3>Configuration des propriétés Captions</h3>
+      <p>Cliquez sur le<strong> lien</strong> Légendes. Sélectionnez la source des légendes:</p>
       <ul>
-        <li><strong>Use Video Cloud captions</strong> - Uses the captions associated with the video. For information on working with captions, see <a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.
-          <p>For captions Facebook requires a <code translate="No">language</code>, which Social populates from the <code translate="No">language</code> on the text track, and a <code translate="No">name</code>, which Social populates from the <code translate="No">label</code> on the text track.</p>
-          <p>Be aware that the <code translate="No">name</code> will be visible to viewers in the Facebook player via the 'Setting' menu and the 'Closed Captions' menu. We recommend that text track labels be set to something that will be meaningful to viewers. (For example, Labeling captions in different languages in those languages.)</p>
+        <li><strong>Utiliser les sous-titres de Video Cloud</strong>: utilise les sous-titres associés à la vidéo. Pour plus d'informations sur l'utilisation des légendes, voir<a href="/media/overview-adding-captions-video.html"> Vue d'ensemble: Ajout de sous-titres à une vidéo</a>.
+          <p>Pour les légendes, Facebook a besoin d'une<code translate="No"> langue</code>, que Social remplit à partir de la<code translate="No"> langue de</code> la piste de texte, et d'un<code translate="No"> nom</code>, que Social remplit à partir de la <code translate="No">étiquette</code> sur la piste de texte.</p>
+          <p>Sachez que le<code translate="No"> nom</code> sera visible par les spectateurs dans le lecteur Facebook via le menu Paramètres-fr/ et le menu Sous-titres-fr/. Nous recommandons que les étiquettes des pistes de texte soient définies de manière à ce qu'elles soient pertinentes pour les spectateurs. (Par exemple, Étiquetage des légendes dans différentes langues dans ces langues.)</p>
         </li>
-        <li><strong>No captions</strong> - No captions will be sent to YouTube</li>
-        <li><strong>Upload captions</strong> - Click <strong>Upload captions</strong> and browse and select a captions file. The captions file should be in .VTT or .SRT format. Select the caption <strong>Language</strong> and <strong>Format</strong>. Click <strong>Add Caption File</strong>.</li>
-      </ul>
-      <aside class="bcls-aside bcls-aside--information">Note: Facebook requires that the caption language include a country in addition to the language. e.g., en-US or en-UK. A language code of just a country code (i.e. 'us') will fail when syncing.</aside>
-      <aside class="bcls-aside bcls-aside--information">Videos with Closed Captions can be clipped via Social, but the resulting clipped video will not have captions. You will need to upload new captions to the clipped video, and Social will use those when publishing.</aside>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-captions-info.png" /></figure>
+        <li><strong>Aucune légende</strong> - Aucune légende ne sera envoyée à YouTube</li>
+        <li><strong>Télécharger des sous-titres</strong>: cliquez sur<strong> Télécharger des sous-titres,</strong> puis parcourez et sélectionnez un fichier de sous-titres. Le fichier de sous-titres doit être au format .VTT ou .SRT. Sélectionnez la<strong> langue</strong> et le<strong> format de la légende</strong>. Cliquez sur<strong> Ajouter un fichier de sous-titres</strong>.</li>
+      </ul> <aside class="bcls-aside bcls-aside--information">Remarque: Facebook exige que la langue des sous-titres inclue un pays en plus de la langue, par exemple en-US ou en-UK. Un code de langue composé uniquement d'un code de pays (c'est-à-dire nous-fr/) échouera lors de la synchronisation.</aside> <aside class="bcls-aside bcls-aside--information">Les vidéos avec sous-titres codés peuvent être découpées via Social, mais la vidéo découpée qui en résulte ne comportera pas de sous-titres. Vous devrez télécharger de nouvelles légendes dans la vidéo coupée, et Social les utilisera lors de la publication.</aside> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-captions-info.png" /></figure>
     </div>
     <div id="fbtarget" class="BCL-subsection">
-      <h3>Configuring the Target properties</h3>
-      <p>Click on the <strong>Target</strong> link to set where the video can be seen. The following options are available:</p>
+      <h3>Configuration des propriétés Target</h3>
+      <p>Cliquez sur le<strong> lien</strong> Target pour définir l'endroit où la vidéo peut être visionnée. Les options suivantes sont disponibles:</p>
       <ul>
-        <li><strong>Audience Optimization Interests</strong> - Add tags to describe the interests of people who are most likely to enjoy your post. For more information, see the <a href="https://www.facebook.com/facebookmedia/get-started/interest-targeting">Facebook documentation</a>.</li>
-        <li><strong>Location Restrictions</strong> - Add countries to include or exclude from seeing the post</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-targeting-info.png" /></figure>
+        <li><strong>Intérêts d'optimisation de l'audience</strong> - Ajoutez des balises pour décrire les centres d'intérêt des personnes les plus susceptibles d'apprécier votre publication. Pour plus d'informations, consultez la documentation<a href="https://www.facebook.com/facebookmedia/get-started/interest-targeting"> Facebook</a>.</li>
+        <li><strong>Restrictions d'emplacement</strong> - Ajoutez des pays à inclure ou à exclure de la publication</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-targeting-info.png" /></figure>
     </div>
     <div id="fbmonetize" class="BCL-subsection">
-      <h3>Configuring the Monetize properties</h3>
-      <p>Click on the<strong> Monetize </strong>link. The following properties can be set:</p>
+      <h3>Configuration des propriétés Monetize</h3>
+      <p>Cliquez sur le<strong> lien</strong> Monétiser. Les propriétés suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Who is your business partner for posts to this destination?</strong> - Add a business partner for branded content posts. As you type, a list of matching businesses will appear. For information on Facebook branded content, see the <a href="https://www.facebook.com/facebookmedia/solutions/branded-content">Facebook documentation</a>.</li>
-        <li><strong>Allow business partner to boost posts</strong></li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-monetize-info.png" /></figure>
+        <li><strong>Qui est votre partenaire commercial pour les publications vers cette destination&nbsp;? </strong>- Ajoutez un partenaire commercial pour les publications de contenu de marque. Au fur et à mesure que vous tapez, une liste des entreprises correspondantes s'affiche. Pour plus d'informations sur le contenu de marque Facebook, consultez la documentation<a href="https://www.facebook.com/facebookmedia/solutions/branded-content"> Facebook</a>.</li>
+        <li><strong>Permettre aux partenaires commerciaux de booster les publications</strong></li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-monetize-info.png" /></figure>
     </div>
     <div id="fbrights" class="BCL-subsection">
-      <h3>Configuring the Rights properties</h3>
-      <aside class="bcls-aside bcls-aside--information">Note: Your Facebook account must have access to the Facebook Rights Manager for the Rights option to appear.</aside>
-      <p>Click on the<strong> Rights </strong>link. The following properties can be set:</p>
+      <h3>Configuration des propriétés des droits</h3> <aside class="bcls-aside bcls-aside--information">Remarque: Votre compte Facebook doit avoir accès au Gestionnaire des droits de Facebook pour que l'option Droits apparaisse.</aside>
+      <p>Cliquez sur le<strong> lien</strong> Droits. Les propriétés suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Detect Matching Content</strong> - Check to enable Facebook rights management. For information, see the <a href="https://rightsmanager.fb.com">Facebook documentation</a>.</li>
-        <li><strong>Specify Ownership</strong> - Specify copyright ownership on video, audio, or both</li>
-        <li><strong>Country Selection</strong> - Select <strong>Worldwide</strong>, <strong>Include Countries</strong> or <strong>Exclude Countries</strong>. If include or exclude is selected, then add the <strong>Location Restrictions</strong>.</li>
-        <li><strong>Apply Match Rule</strong> - Select a rule. The <strong>Match Rule</strong> determines what automatic actions happen when people upload matched videos. Match Rules are managed inside of Facebook.</li>
-        <li><strong>Grant Permission</strong> - Authorize certain people or Pages or Instagram accounts to have permission to post videos matching your content.</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-rights-info.png" /></figure>
+        <li><strong>Détecter le contenu correspondant</strong> - Cochez cette case pour activer la gestion des droits Facebook Pour plus d'informations, consultez la documentation<a href="https://rightsmanager.fb.com"> Facebook</a>.</li>
+        <li><strong>Spécifier la propriété</strong> - Spécifiez le droit d'auteur sur la vidéo, l'audio ou les deux</li>
+        <li><strong>Sélection du pays</strong> - Sélectionnez<strong> le monde entier</strong>,<strong> incluez les pays</strong> ou<strong> excluez les pays</strong>. Si l'option Inclure ou exclure est sélectionnée, ajoutez les restrictions d'<strong>emplacement</strong>.</li>
+        <li><strong>Appliquer la règle de correspondance</strong> - Sélectionnez une règle. La règle de<strong> correspondance</strong> détermine les actions automatiques qui se produisent lorsque les utilisateurs téléchargent des vidéos correspondantes. Les règles de match sont gérées sur Facebook.</li>
+        <li><strong>Autoriser</strong> - Autorisez certaines personnes, Pages ou comptes Instagram à être autorisés à publier des vidéos correspondant à votre contenu.</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-rights-info.png" /></figure>
     </div>
     <div id="fbdistribution" class="BCL-subsection">
-      <h3>Configuring the Distribution properties</h3>
-      <p>Click on the <strong>Distribution</strong> link to set where the video can be seen. The following<strong> Custom Distribution and Moderation </strong>options are available:</p>
+      <h3>Configuration des propriétés de distribution</h3>
+      <p>Cliquez sur le<strong> lien</strong> Distribution pour définir l'endroit où la vidéo peut être visionnée. Les<strong> options de distribution</strong> personnalisée et de modération suivantes sont disponibles:</p>
       <ul>
-        <li><strong>Show in News Feed</strong> - Shows video in News Feed</li>
-        <li><strong>Allow Embedding</strong> - Allow video embeds on third-party sites</li>
-        <li><strong>Add as Secret Video</strong> - Videos will be accessible only via a direct URL and are not searchable for people on Facebook
+        <li><strong>Afficher dans le fil d'actualité</strong> - Affiche la vidéo dans le fil d'actualité</li>
+        <li><strong>Autoriser l'intégration</strong> - Autoriser l'intégration de vidéos sur des sites tiers</li>
+        <li><strong>Ajouter en tant que vidéo secrète</strong> - Les vidéos ne seront accessibles que via une URL directe et ne seront pas consultables sur Facebook
           <ul>
-            <li><strong>Turn off Reactions, Comments and Shares</strong> - Disallows likes and comments</li>
+            <li><strong>Désactiver les réactions, les commentaires et les partages</strong>: interdit les mentions J'aime et les commentaires</li>
           </ul>
         </li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-distribution.png" /></figure>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-distribution.png" /></figure>
     </div>
     <div id="fbtracking" class="BCL-subsection">
-      <h3>Configuring the Tracking properties</h3>
-      <p>Click on the <strong>Tracking</strong> link to assign a universal ID to track the video across systems. The following <strong>Universal ID</strong> options are available:</p>
+      <h3>Configuration des propriétés de suivi</h3>
+      <p>Cliquez sur le<strong> lien</strong> Tracking (Suivi) pour attribuer un ID universel permettant de suivre la vidéo sur tous les systèmes. Les<strong> options d'identification</strong> universelle suivantes sont disponibles:</p>
       <ul>
-        <li>Leave Blank</li>
-        <li>Use Video ID from Video Cloud</li>
-        <li>Use Reference ID from Video Cloud, if present</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-tracking.png" /></figure>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="twitter">Setting video properties for Twitter</h2>
-    <p>When choosing a Twitter destination, the following properties can be configured:</p>
+        <li>Laisser en blanc</li>
+        <li>Utiliser Video ID de Video Cloud</li>
+        <li>Utiliser l'ID de référence de Video Cloud, le cas échéant</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-fb-tracking.png" /></figure>
+    </div>  </section><section class="bcls-section">
+    <h2 id="twitter">Définition des propriétés vidéo pour Twitter</h2>
+    <p>Lorsque vous choisissez une destination Twitter, les propriétés suivantes peuvent être configurées:</p>
     <ul>
-      <li><a href="#twpostinfo">Post Info</a></li>
+      <li><a href="#twpostinfo">Infos sur le poste</a></li>
     </ul>
-    <p class="BCL-aside">After a video is published to Twitter, any updates to the source video in Studio will not update on the Twitter side.</p>
-    <aside class="bcls-aside bcls-aside--information">Note:<a href="creating-social-media-publishing-destinations.html#twitter_defaults"> Default video properties for Twitter</a> can be set by editing the destination.</aside>
+    <p class="BCL-aside">Après la publication d'une vidéo sur Twitter, les mises à jour de la vidéo source dans Studio ne seront pas mises à jour du côté Twitter.</p> <aside class="bcls-aside bcls-aside--information">Remarque:<a href="creating-social-media-publishing-destinations.html#twitter_defaults"> Les propriétés vidéo par défaut de Twitter</a> peuvent être définies en modifiant la destination.</aside>
     <div id="twpostinfo" class="BCL-subsection">
-      <h3>Configuring the Post Info properties</h3>
-      <p>Click on the <strong>Post Info</strong> link and enter the <strong>Tweet</strong> content. Note that @mentions will be converted to #hashtags when being sent to Twitter. For more information, see the blog post, <a href="https://www.brightcove.com/en/blog/2018/11/deprecation-twitter-mentions-brightcove-social">Deprecation of Twitter @mentions in Brightcove Social</a>.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-twitter-tweet.png" /></figure>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="linkedin">Setting video properties for LinkedIn</h2>
-    <p>Videos that are up to 15 minutes long can be uploaded to LinkedIn. For information on LinkedIn video requirements, see <a href="https://www.linkedin.com/help/linkedin/answer/a527229/share-photos-or-videos?lang=en">the LinkedIn documentation</a>.When choosing a LinkedIn destination, the following video properties can be configured:</p>
+      <h3>Configuration des propriétés Post Info</h3>
+      <p>Cliquez sur le<strong> lien Infos sur la</strong> publication et saisissez le<strong> contenu du</strong> Tweet. Notez que @mentions sera converti en #hashtags lorsqu'il sera envoyé sur Twitter. Pour plus d'informations, consultez le billet de blog<a href="https://www.brightcove.com/en/blog/2018/11/deprecation-twitter-mentions-brightcove-social"> Deprecation of Twitter @mentions in Brightcove Social</a>.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-twitter-tweet.png" /></figure>
+    </div>  </section><section class="bcls-section">
+    <h2 id="linkedin">Définition des propriétés vidéo pour LinkedIn</h2>
+    <p>Les vidéos d'une durée maximale de 15 minutes peuvent être téléchargées sur LinkedIn. Pour plus d'informations sur les exigences relatives aux vidéos LinkedIn, consultez<a href="https://www.linkedin.com/help/linkedin/answer/a527229/share-photos-or-videos?lang=en"> la documentation</a> Linkedin. Lors du choix d'une destination LinkedIn, les propriétés vidéo suivantes peuvent être configurées:</p>
     <ul>
-      <li><a href="#ytthumb">Thumbnail Source</a></li>
-      <li><a href="#ytpostinfo">Post Info</a></li>
-      <li><a href="#ytcaptions">Captions</a></li>
-      <li><a href="#ytvisibility">Visibility</a></li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information"> Notes:
+      <li><a href="#ytthumb">Source de la vignette</a></li>
+      <li><a href="#ytpostinfo">Infos sur le poste</a></li>
+      <li><a href="#ytcaptions">Légendes</a></li>
+      <li><a href="#ytvisibility">Visibilité</a></li>
+    </ul> <aside class="bcls-aside bcls-aside--information"> Remarques:
       <ul>
-        <li><a href="creating-social-media-publishing-destinations.html#linkedin_defaults">Default video properties for LinkedIn</a> can be set by editing the destination.</li>
-        <li>Avoid special characters in the name and description of the video: using "&lt;" or "&gt;" are known to cause failure, but other special characters may cause problems as well.</li>
-      </ul>
-    </aside>
+        <li><a href="creating-social-media-publishing-destinations.html#linkedin_defaults">Les propriétés vidéo par défaut de LinkedIn</a> peuvent être définies en modifiant la destination.</li>
+        <li>Évitez les caractères spéciaux dans le nom et la description de la vidéo: l'utilisation de «&lt;-fr/ ou &gt;-fr/ est connue pour provoquer des échecs, mais d'autres caractères spéciaux peuvent également causer des problèmes.</li>
+      </ul> </aside>
     <div id="linkedinthumb" class="BCL-subsection">
-      <h3>Configuring the thumbnail source</h3>
-      <p>When posting to LinkedIn, the video thumbnail source can be set to:</p>
+      <h3>Configuration de la source des vignettes</h3>
+      <p>Lors de la publication sur LinkedIn, la source des vignettes vidéo peut être définie comme suit:</p>
       <ul>
-        <li><strong>Video Cloud</strong> - Use the Video Cloud thumbnail image as the YouTube thumbnail</li>
-        <li><strong>LinkedIn</strong> - LinkedIn will select a thumbnail</li>
-        <li><strong>Custom Image</strong> - Browse and select a custom thumbnail image to use</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-thumb.png" /></figure>
-      <p>Checking <strong>Use for all destinations</strong> will use this thumbnail for all destinations currently being published to.</p>
-      <aside class="bcls-aside bcls-aside--information">Note: Updates to thumbnail images in Studio will not update the thumbnail image on the LinkedIn side.</aside>
+        <li><strong>Video Cloud</strong>: utilisez l'image miniature de Video Cloud comme miniature YouTube</li>
+        <li><strong>LinkedIn</strong> - LinkedIn sélectionnera une vignette</li>
+        <li><strong>Image personnalisée</strong>: parcourez et sélectionnez une vignette personnalisée à utiliser</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-thumb.png" /></figure>
+      <p>Si vous cochez<strong> Utiliser pour toutes les destinations, cette miniature</strong> sera utilisée pour toutes les destinations en cours de publication.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Les mises à jour des images miniatures dans Studio ne mettront pas à jour l'image miniature du côté LinkedIn.</aside>
     </div>
     <div id="linkedinpostinfo" class="BCL-subsection">
-      <h3>Configuring the Post Info properties</h3>
-      <p>Click on the <strong>Post Info</strong> link. The following LinkedIn video properties can be set:</p>
+      <h3>Configuration des propriétés Post Info</h3>
+      <p>Cliquez sur le<strong> lien</strong> Post Info. Les propriétés vidéo LinkedIn suivantes peuvent être définies:</p>
       <ul>
-        <li><strong>Title</strong> - Title of the video (defaults to {{ site.product_short }} title). YouTube supports up to 100 characters.</li>
-        <li><strong>Description</strong> - Description of the video (defaults to {{ site.product_short }} short description). YouTube supports up to 5000 characters.</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-post-info.png" /></figure>
+        <li><strong>Titre</strong>: titre de la vidéo ({{site.product_short}} titre par défaut). YouTube prend en charge jusqu'à 100 caractères.</li>
+        <li><strong>Description</strong>: description de la vidéo (par défaut, {{site.product_short}} courte description). YouTube prend en charge jusqu'à 5 000 caractères.</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-post-info.png" /></figure>
     </div>
     <div id="linkedincaptions" class="BCL-subsection">
-      <h3>Configuring the Captions properties</h3>
-      <p>Click on the <strong>Captions</strong> link. Select the source for the captions:</p>
+      <h3>Configuration des propriétés Captions</h3>
+      <p>Cliquez sur le<strong> lien</strong> Légendes. Sélectionnez la source des légendes:</p>
       <ul>
-        <li><strong>Use Video Cloud captions</strong> - Uses the captions associated with the video. For information on working with captions, see <a href="/media/overview-adding-captions-video.html">Overview: Adding Captions to a Video</a>.</li>
-        <li><strong>No captions</strong> - No captions will be sent to LinkedIn</li>
-        <li><strong>Upload captions</strong> - Click <strong>Upload captions</strong> and browse and select a captions file. The captions file should be in .VTT or .SRT format. Select the caption <strong>Language</strong>, add a <strong>Label</strong> and select the <strong>Format</strong>. Click <strong>Add Caption File</strong>.</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-captions-info.png" /></figure>
-    </div>
-    <aside class="bcls-aside bcls-aside--information">Videos with Closed Captions can be clipped via Social, but the resulting clipped video will not have captions. You will need to upload new captions to the clipped video, and Social will use those when publishing.</aside>
+        <li><strong>Utiliser les sous-titres de Video Cloud</strong>: utilise les sous-titres associés à la vidéo. Pour plus d'informations sur l'utilisation des légendes, voir<a href="/media/overview-adding-captions-video.html"> Vue d'ensemble: Ajout de sous-titres à une vidéo</a>.</li>
+        <li><strong>Aucune légende</strong> - Aucune légende ne sera envoyée à LinkedIn</li>
+        <li><strong>Télécharger des sous-titres</strong>: cliquez sur<strong> Télécharger des sous-titres,</strong> puis parcourez et sélectionnez un fichier de sous-titres. Le fichier de sous-titres doit être au format .VTT ou .SRT. Sélectionnez la<strong> langue de la légende</strong>, ajoutez une<strong> étiquette</strong> et sélectionnez le<strong> format</strong>. Cliquez sur<strong> Ajouter un fichier de sous-titres</strong>.</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-captions-info.png" /></figure>
+    </div> <aside class="bcls-aside bcls-aside--information">Les vidéos avec sous-titres codés peuvent être découpées via Social, mais la vidéo découpée qui en résulte ne comportera pas de sous-titres. Vous devrez télécharger de nouvelles légendes dans la vidéo coupée, et Social les utilisera lors de la publication.</aside>
     <div id="linkedinvisibility" class="BCL-subsection">
-      <h3>Configuring the Visibility properties</h3>
-      <p>Click on the <strong>Visibility</strong> link and select a visibility setting for the video. The following  settings are available:</p>
+      <h3>Configuration des propriétés de visibilité</h3>
+      <p>Cliquez sur le<strong> lien</strong> Visibilité et sélectionnez un paramètre de visibilité pour la vidéo. Les paramètres suivants sont disponibles:</p>
       <ul>
-        <li><strong>PUBLIC</strong> - Anyone can view the video</li>
-        <li><strong>LOGGED IN</strong> - Anyone who is logged in  can view the video</li>
-      </ul>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-visibility-info.png" /></figure>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="clip">Creating a clip</h2>
-    <p>Brightcove Social provides the ability to create video clips from existing videos in your {{ site.product_short }} account. Clips can be used as short, teaser videos that can be posted to social media. To create a clip, click <strong>Create Clip</strong>. For information on creating a clip, see <a href="/social/creating-video-clip-using-brightcove-social.html">Creating a Video Clip Using Brightcove Social</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="download">Downloading videos</h2>
-    <p>Brightcove Social provides the ability to copy the video URL or download a video source file. When downloading, the highest quality MP4 rendition will be downloaded. If there are no MP4 renditions, the <strong>Download</strong> link will be disabled.</p>
-    <p>It is important to understand that URLs for renditions and images are not fixed. Brightcove reconfigures the storage of media assets from time to time and when this happens, URLs for specific assets will change. If you are relying on hard-coded URLs to these assets, the links may break at some point. The best way to prevent links to media from breaking is to retrieve them from {{ site.product_short }} at runtime using the CMS API.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: You cannot download videos that have DRM enabled (lock appears in the video thumbnail). If you select a DRM enabled video, the <strong>Download</strong> button will be disabled.</aside>
-    <p>Follow these steps to download a video.</p>
+        <li><strong>PUBLIC</strong> - Tout le monde peut visionner la vidéo</li>
+        <li><strong>CONNECTÉ</strong> - Toute personne connectée peut visionner la vidéo</li>
+      </ul> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-linkedin-visibility-info.png" /></figure>
+    </div>  </section><section class="bcls-section">
+    <h2 id="clip">Création d'un clip</h2>
+    <p>Brightcove Social permet de créer des clips vidéo à partir de vidéos existantes sur votre compte {{site.product_short}}. Les clips peuvent être utilisés comme de courtes vidéos teaser qui peuvent être publiées sur les réseaux sociaux. Pour créer un clip, cliquez sur<strong> Créer un clip</strong>. Pour plus d'informations sur la création d'un clip, consultez<a href="/social/creating-video-clip-using-brightcove-social.html"> Création d'un clip vidéo à l'aide de Brightcove Social</a>.</p>  </section><section class="bcls-section">
+    <h2 id="download">Téléchargement de vidéos</h2>
+    <p>Brightcove Social permet de copier l'URL de la vidéo ou de télécharger un fichier source vidéo. Lors du téléchargement, le rendu MP4 de la plus haute qualité sera téléchargé. S'il n'existe aucun rendu MP4, le<strong> lien de</strong> téléchargement sera désactivé.</p>
+    <p>Il est important de comprendre que les URL des rendus et des images ne sont pas corrigées. Brightcove reconfigure le stockage des ressources multimédias de temps à autre et lorsque cela se produit, les URL de ressources spécifiques changent. Si vous utilisez des URL codées en dur vers ces ressources, les liens peuvent être rompus à un moment ou à un autre. Le meilleur moyen d'empêcher la rupture des liens vers les médias est de les récupérer à partir de {{site.product_short}} au moment de l'exécution à l'aide de l'API CMS.</p> <aside class="bcls-aside bcls-aside--information">Remarque: Vous ne pouvez pas télécharger de vidéos pour lesquelles la gestion des droits numériques est activée (le verrou apparaît dans la miniature de la vidéo). Si vous sélectionnez une vidéo compatible DRM, le<strong> bouton</strong> Télécharger sera désactivé.</aside>
+    <p>Suivez ces étapes pour télécharger une vidéo.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the<strong> Social </strong>Module.</li>
-      <li>Click <strong>Videos</strong> in the left navigation. A list of videos in your {{ site.product_short }} account will display.</li>
-      <li>Click on the video to download and then click <span class="button-blue-text-bordered"><i data-feather="download"></i> Download</span>.</li>
-      <li>Copy the video URL or click the link to open the video in your browser. <span class="bcl-aside">Right click the video to save the source file locally.</span>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-download-info1.png" /></figure>
+      <li>Ouvrez le<strong> module</strong> Social.</li>
+      <li>Cliquez sur<strong> Vidéos</strong> dans le menu de navigation de gauche. Une liste des vidéos de votre compte {{site.product_short}} s'affichera.</li>
+      <li>Cliquez sur la vidéo à télécharger, puis cliquez sur<span class="button-blue-text-bordered"> Télécharger</span>.</li>
+      <li>Copiez l'URL de la vidéo ou cliquez sur le lien pour ouvrir la vidéo dans votre navigateur. <span class="bcl-aside">Cliquez avec le bouton droit sur la vidéo pour enregistrer le fichier source localement.</span> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-download-info1.png" /></figure>
       </li>
-      <li>Click <span class="button-blue">Close</span>.</li>
+      <li>Cliquez sur<span class="button-blue"> Fermer</span>.</li>
     </ol>
-    <p>The intention of the download link is to allow you to download the file or to use the URL as a value that can be provided to a social platform’s uploader module (for platforms that support upload from an URL). The URL is not intended to be a long-lived, publicly-accessible URL that you would paste into a public social platform post.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="viewvc">Viewing videos in the Media module</h2>
-    <p>Videos on the Videos page can be viewed in the Media module by clicking on a video and then clicking <span class="button-blue-text-bordered">View in Media</span>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-view-in-vc.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="status">Viewing the published locations</h2>
-    <p>Videos that have been attempted to be published to social media will display <strong>Check Status</strong> in the Status column.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-status.png" /></figure>
-    <p>Clicking the <strong>Check Status</strong> link will display a list of social destinations that the video was published to and the status of the publish.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-published-locations.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="360">Publishing 360° videos</h2>
-    <p>Both YouTube, Facebook and the Brightcove Player support 360° video playback. When a 360° video is published to YouTube or Facebook using Brightcove Social, the video will playback in 360° mode. Note that there may be a delay while the 360° effect is processing. Before uploading 360° videos to {{ site.product_short }}, there are some things you must do. For information on working with 360° videos, see <a href="/general/working-360deg-videos.html">Working with 360° Videos</a>. Once your video has been uploaded, the process to publish 360° videos is the same as regular videos.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: Playback of 360° videos is limited to certain browsers.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: When using the Social module to sync a 360° video, the ingest profile used to ingest the video must be configured to save the master file or the video won't sync in 360.</aside>
-  </section>
-</article>
+    <p>Le but du lien de téléchargement est de vous permettre de télécharger le fichier ou d'utiliser l'URL comme valeur pouvant être fournie au module de téléchargement d'une plateforme sociale (pour les plateformes qui prennent en charge le téléchargement à partir d'une URL).™ L'URL n'est pas destinée à être une URL de longue durée et accessible au public que vous colleriez dans une publication publique sur une plateforme sociale.</p>  </section><section class="bcls-section">
+    <h2 id="viewvc">Visionnage de vidéos dans le module Médias</h2>
+    <p>Les vidéos de la page Vidéos peuvent être visionnées dans le module Médias en cliquant sur une vidéo, puis en cliquant sur<span class="button-blue-text-bordered"> Afficher dans les médias</span>.</p>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-view-in-vc.png" /></figure></section><section class="bcls-section">
+    <h2 id="status">Afficher les lieux publiés</h2>
+    <p>Les vidéos qui ont fait l'objet d'une tentative de publication sur les réseaux sociaux afficheront<strong> Vérifier le statut</strong> dans la colonne État.</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-status.png" /></figure>
+    <p>Cliquez sur le<strong> lien</strong> Vérifier le statut pour afficher la liste des destinations sociales sur lesquelles la vidéo a été publiée et l'état de la publication.</p>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16344-published-locations.png" /></figure></section><section class="bcls-section">
+    <h2 id="360">Publier des vidéos à 360°</h2>
+    <p>YouTube, Facebook et le lecteur Brightcove prennent en charge la lecteur vidéo à 360°. Lorsqu'une vidéo à 360° est publiée sur YouTube ou Facebook à l'aide de Brightcove Social, la vidéo est lue en mode 360°. Notez qu'il peut y avoir un délai pendant le traitement de l'effet à 360°. Avant de télécharger des vidéos à 360° sur {{site.product_short}}, il y a certaines choses que vous devez faire. Pour plus d'informations sur l'utilisation de vidéos à 360°, consultez la section<a href="/general/working-360deg-videos.html"> Utilisation de vidéos à 360°</a>. Une fois votre vidéo mise en ligne, le processus de publication des vidéos à 360° est le même que celui des vidéos ordinaires.</p> <aside class="bcls-aside bcls-aside--information">Remarque: La lecteur de vidéos à 360° est limitée à certains navigateurs.</aside> <aside class="bcls-aside bcls-aside--information">Remarque: Lorsque vous utilisez le module Social pour synchroniser une vidéo à 360°, le profil d'acquisition utilisé pour intégrer la vidéo doit être configuré pour enregistrer le fichier principal, sinon la vidéo ne sera pas synchronisée à 360°.</aside> </section> </article> 

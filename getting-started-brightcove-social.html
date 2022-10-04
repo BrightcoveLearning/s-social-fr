@@ -1,57 +1,31 @@
 <article class="bcls-article">
-  <h1>{{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    {% if site.product_short == "Video Cloud" %}
-    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5012341126001">&nbsp;</div>
-    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
-    {% endif %}
-    <p>To access Brightcove Social, login to {{ site.product }} and open the<strong> Social </strong> module in the primary navigation. A list of your published videos will be displayed by default.</p>
-    {% if site.product_short == "Video Cloud" %}
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16342-social-module-vc.png" /></figure>
-  {% endif %}
-    {% if site.product_short == "Beacon" %}
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16342-social-module-beacon.png" /></figure>
-  {% endif %}
-    <p>Using Brightcove Social you can:</p>
+  <h1>{{page.title}}</h1> <summary>{{page.description}}</summary> <section class="bcls-section"> {% if site.product_short == Video Cloud-fr/ %}
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5012341126001">&nbsp;</div> <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> {% endif %}
+    <p>Pour accéder à Brightcove Social, connectez-vous à {{site.product}} et ouvrez le<strong> module</strong> Social dans la navigation principale. Une liste de vos vidéos publiées s'affichera par défaut.</p>
+    {% if site.product_short == Video Cloud-fr/ %}<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16342-social-module-vc.png" /></figure> {% endif %} {% if site.product_short == Beacon-fr/ %}<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/s-social-img/node16342-social-module-beacon.png" /></figure> {% endif %}
+    <p>En utilisant Brightcove Social, vous pouvez:</p>
     <ul>
-      <li><a href="#view">View your published videos</a></li>
-      <li><a href="#publish">Publish videos to social media platforms</a></li>
-      <li><a href="#publish-live">Publish live videos to social media platforms</a></li>
-      <li><a href="#autosync">Automatically sync videos to social media accounts</a></li>
-      <li><a href="#create">Create social media publishing destinations</a></li>
-      <li><a href="#analytics">Review Social analytics</a></li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information">
-      <p>Note: If you are having issues getting the Social module to load, check to ensure your network is not blocking the Facebook library: <code translate="no">https://connect.facebook.net/en_US/sdk.js</code>. This is especially common in Firefox due to the Enhanced Tracking Protection which blocks the Facebook SDK by default. For information and instructions on adjusting these settings, see <a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop">Enhanced Tracking Protection in Firefox for desktop</a>.</p>
-    </aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="view">Viewing your published videos</h2>
-    <p>To view your published videos, click the <strong>Published</strong> link in the left navigation. Each published video will display the publishing status, video information and a link to the social platform that the video has been published to. For information on viewing published videos, see <a href="/social/viewing-videos-published-social-media.html">Viewing Videos Published to Social Media</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="publish">Publishing videos to social media platforms</h2>
-    <p>To publish a video to a social media platform, click the <strong>Videos</strong> link in the left navigation or click <span class="button-blue">Choose videos to Publish</span> at the top of the page. For information on publishing videos to a social media account, see <a href="/social/publishing-videos-social-media-platforms.html">Publishing Videos to Social Media Platforms</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="publish-live">Publishing live videos to social media platforms</h2>
-    <p>To publish a live video to a social media platform, click <span class="button-blue">Create Live Event</span> at the top of the page. For information on publishing live videos to a social media account, see one of the following:</p>
+      <li><a href="#view">Afficher vos vidéos publiées</a></li>
+      <li><a href="#publish">Publier des vidéos sur les réseaux sociaux</a></li>
+      <li><a href="#publish-live">Publiez des vidéos en direct sur les réseaux sociaux</a></li>
+      <li><a href="#autosync">Synchronisation automatique des vidéos avec les comptes de réseaux</a></li>
+      <li><a href="#create">Créer des destinations de publication sur les réseaux</a></li>
+      <li><a href="#analytics">Critique de Social analytics</a></li>
+    </ul> <aside class="bcls-aside bcls-aside--information">
+      <p>Remarque: Si vous rencontrez des difficultés pour charger le module Social, assurez-vous que votre réseau ne bloque pas la bibliothèque Facebook:<code translate="no"> https://connect.facebook.net/en_US/sdk.js</code>. Ceci est particulièrement fréquent dans Firefox en raison de la protection améliorée contre le pistage qui bloque le SDK Facebook par défaut. Pour plus d'informations et d'instructions sur l'ajustement de ces paramètres, voir Protection<a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop"> améliorée contre le pistage dans Firefox pour ordinateur de bureau</a></p>   </aside></section><section class="bcls-section">
+    <h2 id="view">Visionnage de vos vidéos publiées</h2>
+    <p>Pour afficher vos vidéos publiées, cliquez sur le<strong> lien</strong> Publié dans le menu de navigation de gauche. Chaque vidéo publiée affichera l'état de publication, les informations relatives à la vidéo et un lien vers la plateforme sociale sur laquelle la vidéo a été publiée. Pour plus d'informations sur la visualisation des vidéos publiées, consultez la section<a href="/social/viewing-videos-published-social-media.html"> Affichage des vidéos publiées sur les réseaux sociaux</a>.</p>  </section><section class="bcls-section">
+    <h2 id="publish">Publier des vidéos sur les réseaux sociaux</h2>
+    <p>Pour publier une vidéo sur une plateforme de réseau social, cliquez sur le<strong> lien</strong> Vidéos dans le volet de navigation de gauche ou cliquez sur<span class="button-blue"> Choisir les vidéos</span> à publier en haut de la page. Pour plus d'informations sur la publication de vidéos sur un compte de réseau social, consultez<a href="/social/publishing-videos-social-media-platforms.html"> Publier des vidéos sur les plateformes de réseaux sociaux</a>.</p>  </section><section class="bcls-section">
+    <h2 id="publish-live">Publier des vidéos en direct sur les réseaux sociaux</h2>
+    <p>Pour publier une vidéo en direct sur une plateforme de réseaux sociaux, cliquez sur<span class="button-blue"> Créer un événement</span> en direct en haut de la page. Pour plus d'informations sur la publication de vidéos en direct sur un compte de réseau social, consultez l'une des pages suivantes:</p>
     <ul>
-      <li><a href="/social/publishing-live-event-facebook.html">Publishing a Live Event to Facebook</a></li>
-      <li><a href="publishing-live-event-youtube.html">Publishing a Live Event to YouTube</a></li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="autosync">Automatically syncing videos to social media accounts</h2>
-    <p>The Auto Sync feature can be used to have videos automatically published to social media destinations based upon tags that are assigned to a video. Configure Auto Sync by clicking <strong>Auto Sync</strong> in the left navigation. For information on configuring the Auto Sync feature, see <a href="/social/using-auto-sync-synchronize-videos-social-media-accounts.html">Using Auto Sync to Synchronize Videos to Social Media Accounts</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="create">Creating social media publishing destinations</h2>
-    <p>Publishing destinations are the social media accounts to which you will publish videos to. A publishing destination can be a YouTube channel, Facebook page or Twitter account. Publishing destinations are created by clicking <strong>Destinations</strong> in the left navigation. For information on creating publishing destinations, see <a href="/social/creating-social-media-publishing-destinations.html">Creating Social Media Publishing Destinations</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="analytics">Reviewing social analytics</h2>
-    <p>Social Analytics provides data on how videos shared to social media channels are performing. View the social analytics by clicking <strong>Social Analytics</strong> in the left navigation. For information on social analytics, see <a href="/social/reviewing-social-analytics.html">Reviewing Social Analytics</a>.</p>
-  </section>
-</article>
+      <li><a href="/social/publishing-live-event-facebook.html">Publier un événement en direct sur Facebook</a></li>
+      <li><a href="publishing-live-event-youtube.html">Publier un événement en direct sur YouTube</a></li>
+    </ul>  </section><section class="bcls-section">
+    <h2 id="autosync">Synchronisation automatique des vidéos avec les comptes de réseaux sociaux</h2>
+    <p>La fonction de synchronisation automatique peut être utilisée pour que les vidéos soient automatiquement publiées sur les réseaux sociaux en fonction des balises attribuées à une vidéo. Configurez la synchronisation automatique en cliquant sur<strong> Auto Sync</strong> dans le menu de navigation de gauche. Pour plus d'informations sur la configuration de la fonctionnalité de synchronisation automatique, voir<a href="/social/using-auto-sync-synchronize-videos-social-media-accounts.html"> Utilisation de la synchronisation automatique pour synchroniser les vidéos avec les comptes de réseaux sociaux</a>.</p>  </section><section class="bcls-section">
+    <h2 id="create">Création de destinations de publication pour réseaux sociaux</h2>
+    <p>Les destinations de publication sont les comptes de réseaux sociaux sur lesquels vous allez publier des vidéos. Une destination de publication peut être une chaîne YouTube, une page Facebook ou un compte Twitter. Les destinations de publication sont créées en cliquant sur<strong> Destinations</strong> dans le menu de navigation de gauche. Pour plus d'informations sur la création de destinations de publication, voir<a href="/social/creating-social-media-publishing-destinations.html"> Création de destinations</a> de publication sur les réseaux sociaux</p>  </section><section class="bcls-section">
+    <h2 id="analytics">Révision des analyses sociales</h2>
+    <p>Social Analytics fournit des données sur les performances des vidéos partagées sur les réseaux sociaux. Consultez les analyses sociales en cliquant sur<strong> Social Analytics</strong> dans le menu de navigation de gauche. Pour plus d'informations sur Social Analytics, consultez la section<a href="/social/reviewing-social-analytics.html"> Révision de Social Analytics</a>.</p>   </section></article>
